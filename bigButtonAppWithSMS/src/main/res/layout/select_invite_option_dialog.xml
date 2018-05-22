@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_up_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/popupWidth"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/menuItemHeight"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9c9c9c" />
+
+        <TextView
+            android:id="@+id/tvSendEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menuItemHeight"
+            android:gravity="center"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingLeft="@dimen/paddingButtons"
+            android:paddingRight="@dimen/paddingButtons"
+            android:paddingStart="@dimen/paddingButtons"
+            android:singleLine="true"
+            android:textColor="@color/textSkipColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium"
+            android:textStyle="bold" />
+        <!--
+             android:layout_marginLeft="@dimen/messageMargin"
+            android:layout_marginRight="@dimen/messageMargin"
+        -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9c9c9c" />
+
+        <TextView
+            android:id="@+id/tvSendText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menuItemHeight"
+            android:gravity="center"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingLeft="@dimen/paddingButtons"
+            android:paddingRight="@dimen/paddingButtons"
+            android:paddingStart="@dimen/paddingButtons"
+            android:singleLine="true"
+            android:textColor="@color/textSkipColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9c9c9c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightButton"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/txtCancel"
+            android:textColor="@color/textSkipColor"
+            android:textSize="@dimen/txtSizeMedium"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

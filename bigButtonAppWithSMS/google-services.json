@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "146382238401",
+    "firebase_url": "https://chatstasy-f0999.firebaseio.com",
+    "project_id": "chatstasy-f0999",
+    "storage_bucket": "chatstasy-f0999.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146382238401:android:5c6df8b8ba0d96ef",
+        "android_client_info": {
+          "package_name": "com.tnc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146382238401-5e3ktsshdipi2625tokstpl2qpp59lf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tnc",
+            "certificate_hash": "cfb75a27b5bc36baaea3935de142420ece3cd576"
+          }
+        },
+        {
+          "client_id": "146382238401-ks93pfruooo7ri4cuv0u0u27tiii9f01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Bt_nxJYv4FAGoyf22_G_cNw0N-MK9U4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146382238401-ks93pfruooo7ri4cuv0u0u27tiii9f01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

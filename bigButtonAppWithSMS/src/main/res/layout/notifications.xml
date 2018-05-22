@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"
+            android:orientation="vertical"
+            android:padding="@dimen/paddindMargins" >
+
+            <TextView
+                android:id="@+id/tvNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/txtNotification"
+                android:textColor="@color/textBlueColor"
+                android:textSize="@dimen/txtSizeLarger" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stripHeight"
+            android:background="@color/stripDarkBlueColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:orientation="vertical" >
+
+            <com.tnc.swipeandpulllibrary.SwipeMenuListView
+                android:id="@+id/lvNotifications"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/white"
+                android:dividerHeight="@dimen/paddindMargins"
+                android:scrollbars="none" />
+
+            <!--
+                 <eu.erikw.PullToRefreshListView
+                android:id="@+id/lvNotifications"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/white"
+                android:dividerHeight="@dimen/paddindMargins"
+                android:scrollbars="none" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+         <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvNotifications"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+    -->
+
+</LinearLayout>

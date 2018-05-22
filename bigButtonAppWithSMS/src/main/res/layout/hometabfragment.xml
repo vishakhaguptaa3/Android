@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginTopContents"
+        android:layout_marginRight="@dimen/marginTopContents"
+        android:layout_marginTop="@dimen/paddingButtons" >
+        <!--android:layout_marginTop="@dimen/marginTopContents"-->
+
+        <FrameLayout
+            android:id="@+id/flNotificationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btnNotification"
+                android:layout_width="@dimen/BtnHeight"
+                android:layout_height="@dimen/BtnHeight"
+                android:background="@drawable/notify_bell_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvUnreadNotificationCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginUnreadNotificationCount"
+            android:layout_marginStart="@dimen/marginUnreadNotificationCount"
+            android:layout_toEndOf="@+id/flNotificationView"
+            android:layout_toRightOf="@+id/flNotificationView"
+            android:background="@drawable/point"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeSmall"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imViewCall"
+                android:layout_width="@dimen/dimensCallMessage"
+                android:layout_height="@dimen/dimensCallMessage"
+                android:background="@drawable/ic_call_mode_enabled"
+                android:contentDescription="@string/image"
+                android:layout_marginRight="@dimen/paddindMargins"/>
+
+            <FrameLayout
+
+                android:layout_width="@dimen/widthToggleHomeScreen"
+                android:layout_height="@dimen/heightToggleHomeScreen">
+
+                <ToggleButton
+                    android:id="@+id/toggleCallMessage"
+                    style="@style/toggleButton"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_toggle_bg"
+                    android:checked="false" />
+
+                <Button
+                    android:id="@+id/btnDisable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000" />
+            </FrameLayout>
+
+            <!--
+            Working For Version1
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#cc00cc">
+
+                <ToggleButton
+                    android:id="@+id/toggleCallMessage"
+                    style="@style/toggleButton"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/widthToggleHomeScreen"
+                    android:layout_height="@dimen/heightToggleHomeScreen"
+                    android:background="@drawable/ic_toggle_bg"
+                    android:checked="false" />
+
+                <Button
+                    android:id="@+id/btnDisable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000" />
+            </FrameLayout>-->
+
+            <ImageView
+                android:id="@+id/imViewMessage"
+                android:layout_width="@dimen/dimensCallMessage"
+                android:layout_height="@dimen/dimensCallMessage"
+                android:layout_marginLeft="@dimen/paddindMargins"
+                android:background="@drawable/ic_chat_mode_disabled"
+                android:contentDescription="@string/image" />
+
+            <!--  android:layout_height="@dimen/heightMessage" -->
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btnAddTile"
+                android:layout_width="@dimen/BtnHeight"
+                android:layout_height="@dimen/BtnHeight"
+                android:background="@drawable/add_new" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/marginTopContents">
+        <com.tnc.widgets.CustomSpinner
+            android:id="@+id/spinnerCategory"
+            android:gravity="center"
+            android:layout_width="@dimen/scrollHeight"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:textSize="@dimen/txtSizeNormal"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/heightCheckBox"
+            android:layout_height="@dimen/heightCheckBox"
+            android:background="@drawable/ic_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flGridEmergencyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clipChildren="false"
+            android:gravity="center_vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|right"
+                android:layout_toLeftOf="@+id/btnCall"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/btnProfileMode"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:layout_marginRight="@dimen/paddindMargins"
+                    android:background="@drawable/ic_vibrate_mode_disabled"
+                    android:clipChildren="false"/>
+                <Button
+                    android:id="@+id/btnDialPad"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:layout_marginRight="@dimen/paddindMargins"
+                    android:background="@drawable/dialpad_button"
+                    android:clipChildren="false"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="@dimen/dimenCheckBox"
+                android:layout_height="@dimen/dimenCheckBox"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/iconHeight"
+                android:background="@drawable/edit_tile"
+                android:clipChildren="false"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/btnCall"
+                android:layout_width="@dimen/dimenCallButton"
+                android:layout_height="@dimen/dimenCallButton"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|left"
+                android:layout_toRightOf="@+id/btnCall"
+                android:layout_centerVertical="true">
+                <Button
+                    android:id="@+id/btnContactSharing"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:background="@drawable/contact_sharing_button"
+                    android:clipChildren="false"
+                    />
+
+                <Button
+                    android:id="@+id/btnVoiceMail"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:background="@drawable/voicemail_button_gray"
+                    android:clipChildren="false"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="@dimen/dimenCheckBox"
+                android:layout_height="@dimen/dimenCheckBox"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/iconHeight"
+                android:background="@drawable/delete_tile"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginBottonHomeScreenGridView"
+            android:clipChildren="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llGridViewBackgroundHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:background="#80e6e6e6">
+                <!-- android:layout_marginTop="@dimen/paddingButtons"-->
+
+
+                <com.tnc.draggablegridviewpager.DraggableGridViewPager
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="93"
+                    android:paddingEnd="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:scrollbars="none" />
+
+                <!-- <LinearLayout
+                     android:id="@+id/llIndicatorHolder"
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="5"
+                     android:background="#10e6e6e6"
+                     android:gravity="center"
+                     android:orientation="horizontal"
+                     android:visibility="gone"/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7">
+
+                    <Button
+                        android:id="@+id/btnPreviousPage"
+                        android:layout_width="@dimen/widthNextPreviousArroHomeScreen"
+                        android:layout_height="@dimen/heightNextPreviousArroHomeScreen"
+                        android:layout_toLeftOf="@+id/textPageNumber"
+                        android:layout_marginRight="@dimen/marginTopContents"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow_previous"/>
+
+                    <TextView
+                        android:id="@+id/textPageNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txtSizeMedium"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnNextPage"
+                        android:layout_toRightOf="@+id/textPageNumber"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/marginTopContents"
+                        android:layout_width="@dimen/widthNextPreviousArroHomeScreen"
+                        android:layout_height="@dimen/heightNextPreviousArroHomeScreen"
+                        android:background="@drawable/arrow_next"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout> <!-- .86 ends -->
+
+        </LinearLayout> <!-- 1 ends -->
+
+    </FrameLayout>
+
+</LinearLayout>

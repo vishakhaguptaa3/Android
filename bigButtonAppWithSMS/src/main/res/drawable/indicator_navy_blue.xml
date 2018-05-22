@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <corners android:radius="@dimen/paddindMargins" />
+
+    <size
+        android:height="@dimen/dimenBGunreadMessageCount"
+        android:width="@dimen/dimenBGunreadMessageCount" />
+
+    <solid android:color="@color/colorNavyBlue_MissedCallIndicator" />
+
+    <!-- <stroke
+        android:width="@dimen/viewHeight"
+        android:color="@android:color/white" /> -->
+
+</shape>

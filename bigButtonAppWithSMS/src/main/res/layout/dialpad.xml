@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingButtons"
+        android:clickable="false">
+
+        <TextView
+            android:id="@+id/tvDialPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txtDialPad"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <Button
+            android:id="@+id/btnCallDetails"
+            android:layout_width="@dimen/dimenDialledCallButton"
+            android:layout_height="@dimen/dimenDialledCallButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marginTop_BottomLayout"
+            android:background="@drawable/ic_dialled_calls"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/toggleNumberMessage"
+                style="@style/toggleButton"
+                android:layout_width="@dimen/widthToggle"
+                android:layout_height="@dimen/heightToggle"
+                android:background="@drawable/ic_toggle_bg"
+                android:checked="false" />
+
+            <Button
+                android:id="@+id/btnDisable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvAlphabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textColor="@color/textColorGrey"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/paddingButtons"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dimenDialPadWidth"
+            android:layout_height="@dimen/heightEditText"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@drawable/edittextbg_dialpad">
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="0dp"
+                android:layout_weight=".88"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:background="@android:color/transparent"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:cursorVisible="true"
+                android:textSize="@dimen/txtSizeLarger" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".12"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btnClearAllNumbers"
+                    android:layout_width="@dimen/dimenDialledCallButton"
+                    android:layout_height="@dimen/dimenDialledCallButton"
+                    android:padding="2dp"
+                    android:background="@drawable/ic_delete_number"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/paddindPopUps">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddindMargins"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue">
+
+                        <Button
+                            android:id="@+id/btnFirst"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue"
+                        android:layout_marginLeft="@dimen/paddingButtons">
+
+                        <Button
+                            android:id="@+id/btnSecond"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="2"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberSecond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="2"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue"
+                        android:layout_marginLeft="@dimen/paddingButtons">
+
+                        <Button
+                            android:id="@+id/btnThird"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberThird"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue">
+
+                        <Button
+                            android:id="@+id/btnFourth"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="4"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberFourth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="4"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue"
+                        android:layout_marginLeft="@dimen/paddingButtons">
+
+                        <Button
+                            android:id="@+id/btnFifth"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="5"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberFifth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="5"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue"
+                        android:layout_marginLeft="@dimen/paddingButtons">
+
+                        <Button
+                            android:id="@+id/btnSixth"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="6"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberSixth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="6"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue">
+
+                        <Button
+                            android:id="@+id/btnSeventh"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="7"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberSeventh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="7"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue"
+                        android:layout_marginLeft="@dimen/paddingButtons">
+
+                        <Button
+                            android:id="@+id/btnEighth"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="8"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberEighth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="8"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue"
+                        android:layout_marginLeft="@dimen/paddingButtons">
+
+                        <Button
+                            android:id="@+id/btnNinth"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"
+                            android:text="9"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNumberNinth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="9"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue" >
+
+                        <Button
+                            android:id="@+id/btnStar"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:layout_centerInParent="true"
+                            android:background="#00000000"
+                            android:text="*"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeLarger"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text=","
+                            android:textColor="#fff"
+                            android:textSize="@dimen/txtSizeLarge"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingButtons"
+                        android:background="@drawable/dial_blue" >
+
+                        <Button
+                            android:id="@+id/btnZero"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:layout_centerInParent="true"
+                            android:background="#00000000"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="+"
+                            android:textColor="#fff"
+
+                            android:textSize="@dimen/txtSizeMedium"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingButtons"
+                        android:background="@drawable/dial_blue" >
+                        <Button
+                            android:id="@+id/btnHash"
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:text="#"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/txtSizeMidRange"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/paddingButtons"
+
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dial_blue">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:layout_centerInParent="true"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/btnCreateContact"
+                                android:layout_width="@dimen/dimenCreateContactIcon"
+                                android:layout_height="@dimen/dimenCreateContactIcon"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/createcontact" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingButtons"
+                        android:background="@drawable/call_icon_dialpad">
+
+                        <!-- android:layout_width="@dimen/widthDialPadNum"
+                        android:layout_height="@dimen/dimenDialPadNum" -->
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimenDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            >
+
+                            <Button
+                                android:id="@+id/btnCall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@android:color/transparent"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingButtons"
+                        android:background="@drawable/dial_blue"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/widthDialPadNum"
+                            android:layout_height="@dimen/dimenDialPadNum"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/btnClear"
+                                android:layout_width="@dimen/widthClearButton"
+                                android:layout_height="@dimen/heightClearButton"
+                                android:background="@drawable/delete_number"
+                                android:layout_gravity="center"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

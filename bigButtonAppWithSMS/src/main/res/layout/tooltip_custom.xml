@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tooltip"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/paddingButtons">
+
+    <Button
+        android:id="@+id/btnAirplaneMode"
+        android:layout_width="@dimen/dimenCheckBox"
+        android:layout_height="@dimen/dimenCheckBox"
+        android:background="@drawable/ic_airplane_mode_disabled"/>
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="@dimen/dimenCheckBox"
+        android:layout_height="@dimen/dimenCheckBox"
+        android:layout_marginLeft="@dimen/paddingButtons"
+        android:background="@drawable/ic_normal_mode_disabled"/>
+
+    <Button
+        android:id="@+id/btnVibrate"
+        android:layout_width="@dimen/dimenCheckBox"
+        android:layout_height="@dimen/dimenCheckBox"
+        android:background="@drawable/ic_vibrate_mode_disabled"
+        android:layout_marginLeft="@dimen/paddingButtons"/>
+
+    <Button
+        android:id="@+id/btnSilent"
+        android:layout_width="@dimen/dimenCheckBox"
+        android:layout_height="@dimen/dimenCheckBox"
+        android:background="@drawable/ic_silent_mode_disabled"
+        android:layout_marginLeft="@dimen/paddingButtons"/>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_LeftRightTop"
+        android:layout_marginRight="@dimen/margin_LeftRightTop"
+        android:layout_marginTop="@dimen/margin_Top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtContactName"
+            android:textColor="#222222"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <EditText
+            android:id="@+id/etContactName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightEditText"
+            android:layout_marginTop="@dimen/padding_marginEditText"
+            android:background="@drawable/edittext_bg_name"
+            android:inputType="text"
+            android:maxLength="20"
+            android:paddingEnd="@dimen/padding_marginEditText"
+            android:paddingLeft="@dimen/padding_marginEditText"
+            android:paddingRight="@dimen/padding_marginEditText"
+            android:paddingStart="@dimen/padding_marginEditText"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <TextView
+            android:id="@+id/tvClickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_marginEditText"
+            android:text="@string/txtClickName"
+            android:textColor="#222222"
+            android:textSize="@dimen/txtSizeMedium" />
+
+        <TextView
+            android:id="@+id/tvContactPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Top"
+            android:text="@string/txtContactPhone"
+            android:textColor="#222222"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightContactNumlayoutInUse"
+            android:fillViewport="true"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llContactNumbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_LeftRightTop"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/heightEditText" >
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:background="@drawable/button_bg_skip"
+                android:gravity="center"
+                android:text="@string/txtNext"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <Button
+                android:id="@+id/btnDisableNextButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80ffffff"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

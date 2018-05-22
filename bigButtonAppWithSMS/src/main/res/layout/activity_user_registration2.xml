@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/user_registration_screen2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLayout" >
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtCreateUserProfile"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stripHeight"
+            android:background="@color/stripDarkBlueColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:fillViewport="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/regAlertCloudBackUplayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_margin="@dimen/paddingLayout" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/regAlertCloudBackUptxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTop_Fields"
+                        android:text="@string/txtProvideBackUpKeytxt1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddindMargins"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTop_Fields"
+                        android:text="@string/txtCloudBackUpKey"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+                    <EditText
+                        android:id="@+id/regPhoneNumberAlertEdtCloudKey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+18585551212"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg_name"
+                        android:singleLine="false"
+                        android:textColor="@color/textGreyColorChooseConatct"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeLarge"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/regPhoneNumberAledtphonelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTop_Fields"
+                        android:text="@string/txtOldPhoneNumber"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+                    <EditText
+                        android:id="@+id/regPhoneNumberAlertEdtPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+18585551212"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg_name"
+                        android:singleLine="false"
+                        android:textColor="@color/textGreyColorChooseConatct"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeLarge"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/paddingLayout"
+                        android:paddingRight="@dimen/paddingLayout"
+                        android:textSize="@dimen/txtSizeMedium"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/txtCloudBackUpKeyMessage"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+  </ScrollView>
+
+
+</LinearLayout>
+</LinearLayout>

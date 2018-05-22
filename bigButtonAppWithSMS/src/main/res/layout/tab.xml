@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/mainview_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/heightTopBar"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/tab_padding" >
+
+        <ImageView
+            android:id="@+id/tab_image"
+            android:layout_width="@dimen/tab_image_size"
+            android:layout_height="@dimen/tab_image_size"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:id="@+id/tvTabName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeSmall" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUnreadMessageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/tab_image_size"
+        android:layout_marginEnd="@dimen/tab_notification_marginRightEnd"
+        android:layout_marginRight="@dimen/tab_notification_marginRightEnd"
+        android:background="@drawable/point"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeSmall"
+        android:visibility="gone" />
+    <!--
+     android:layout_marginLeft="@dimen/tab_image_size"
+        android:layout_marginStart="@dimen/tab_image_size"
+    -->
+
+</RelativeLayout>

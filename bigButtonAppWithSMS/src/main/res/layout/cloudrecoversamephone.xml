@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!--
+         <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    -->
+
+    <include
+        android:id="@+id/rlTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        android:layout_alignParentTop="true"
+        layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:id="@+id/rlInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/heightTopBar"
+        android:background="@color/bgEditText"
+        android:gravity="center_horizontal" >
+
+        <!--  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingContentRecover" >
+
+            <ImageView
+                android:layout_width="@dimen/iconDimension"
+                android:layout_height="@dimen/iconDimension"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/restore"
+                android:contentDescription="@string/image" />
+
+            <TextView
+                android:id="@+id/tvRecover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <TextView
+                android:id="@+id/tvSamePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textBlueColor"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <TextView
+                android:id="@+id/tvSubMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/paddingContentRecover"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textColorGrey"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeSmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlInformation" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/paddingContentRecover"
+                android:paddingRight="@dimen/paddingContentRecover" >
+
+                <TextView
+                    android:id="@+id/tvInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorGrey"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <EditText
+                    android:id="@+id/etBackupKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditText"
+                    android:layout_marginTop="@dimen/paddingContentRecover"
+                    android:background="@drawable/edittext_bg_name"
+                    android:gravity="center"
+                    android:hint="xxxxxxxxxx"
+                    android:inputType="number"
+                    android:paddingEnd="@dimen/padding_marginEditText"
+                    android:paddingLeft="@dimen/padding_marginEditText"
+                    android:paddingRight="@dimen/padding_marginEditText"
+                    android:paddingStart="@dimen/padding_marginEditText"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/paddingContentRecover"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtSubmit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="@color/bgEditText"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/paddingContentRecover" >
+
+                    <ImageView
+                        android:layout_width="@dimen/iconDimension"
+                        android:layout_height="@dimen/iconDimension"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/restore"
+                        android:contentDescription="@string/image" />
+
+                    <TextView
+                        android:id="@+id/tvRecover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/textGreyColorChooseConatct"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+                    <TextView
+                        android:id="@+id/tvSamePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/textBlueColor"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+                    <TextView
+                        android:id="@+id/tvSubMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/paddingContentRecover"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/textColorGrey"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeSmall" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/paddingContentRecover"
+                android:paddingRight="@dimen/paddingContentRecover" >
+
+                <TextView
+                    android:id="@+id/tvInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorGrey"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <EditText
+                    android:id="@+id/etBackupKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditText"
+                    android:layout_marginTop="@dimen/paddingContentRecover"
+                    android:background="@drawable/edittext_bg_name"
+                    android:gravity="center"
+                    android:hint="xxxxxxxxxx"
+                    android:inputType="number"
+                    android:paddingEnd="@dimen/padding_marginEditText"
+                    android:paddingLeft="@dimen/padding_marginEditText"
+                    android:paddingRight="@dimen/padding_marginEditText"
+                    android:paddingStart="@dimen/padding_marginEditText"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorGrey"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/paddingContentRecover"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtSubmit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+-->

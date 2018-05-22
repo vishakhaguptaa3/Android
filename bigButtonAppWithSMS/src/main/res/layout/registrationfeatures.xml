@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <TextView
+        android:id="@+id/tvRegistrationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/borderStrokeRadius"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/paddingButtons"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/paddings_Features"
+        android:paddingLeft="@dimen/paddings_Features"
+        android:paddingRight="@dimen/paddings_Features"
+        android:paddingStart="@dimen/paddings_Features" >
+
+        <!-- android:layout_marginTop="@dimen/paddings_Contents" -->
+        <!--
+         android:layout_marginTop="@dimen/paddings_Contents"
+             <TextView
+            android:id="@+id/tvRegistrationMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/textColorFrom"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" />
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.3"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fillViewport="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:scrollbars="none" >
+
+                    <!-- android:layout_height="@dimen/scrollHeight" -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg_name"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <!-- android:layout_marginTop="@dimen/paddings_Contents" -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heightInstructionLayout"
+                                android:baselineAligned="false"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2" >
+
+                                    <ImageView
+                                        android:layout_width="@dimen/heightCheckBox"
+                                        android:layout_height="@dimen/heightCheckBox"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/tick"
+                                        android:contentDescription="@string/image" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8" >
+
+                                    <TextView
+                                        android:id="@+id/tvRegBenefitFirst"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_vertical|start"
+                                        android:singleLine="false"
+                                        android:text="@string/txtRegisterBenefitFirst"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/txtSizeNormal" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/viewHeight"
+                                android:background="@color/borderEditText" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heightInstructionLayoutSecond"
+                                android:baselineAligned="false"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2" >
+
+                                    <ImageView
+                                        android:layout_width="@dimen/heightCheckBox"
+                                        android:layout_height="@dimen/heightCheckBox"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/tick"
+                                        android:contentDescription="@string/image" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8" >
+
+                                    <TextView
+                                        android:id="@+id/tvRegBenefitSecond"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_vertical|start"
+                                        android:singleLine="false"
+                                        android:text="@string/txtRegisterBenefitSecond"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/txtSizeNormal" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/viewHeight"
+                                android:background="@color/borderEditText" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heightInstructionLayoutSecond"
+                                android:baselineAligned="false"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2" >
+
+                                    <ImageView
+                                        android:layout_width="@dimen/heightCheckBox"
+                                        android:layout_height="@dimen/heightCheckBox"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/tick"
+                                        android:contentDescription="@string/image" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8" >
+
+                                    <TextView
+                                        android:id="@+id/tvRegBenefitThird"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_vertical|start"
+                                        android:singleLine="false"
+                                        android:text="@string/txtRegisterBenefitThird"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/txtSizeNormal" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/viewHeight"
+                                android:background="@color/borderEditText" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heightInstructionLayoutSecond"
+                                android:baselineAligned="false"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2" >
+
+                                    <ImageView
+                                        android:layout_width="@dimen/heightCheckBox"
+                                        android:layout_height="@dimen/heightCheckBox"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/tick"
+                                        android:contentDescription="@string/image" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8" >
+
+                                    <TextView
+                                        android:id="@+id/tvRegBenefitFourth"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_vertical|start"
+                                        android:singleLine="false"
+                                        android:text="@string/txtRegisterBenefitFourth"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/txtSizeNormal" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/viewHeight"
+                                android:background="@color/borderEditText"
+                                android:visibility="gone" />
+
+                            <!--
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/heightInstructionLayoutSecond"
+                                android:baselineAligned="false"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0" >
+
+                                    <ImageView
+                                        android:layout_width="@dimen/heightCheckBox"
+                                        android:layout_height="@dimen/heightCheckBox"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/tick"
+                                        android:contentDescription="@string/image" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" >
+
+                                    <TextView
+                                        android:id="@+id/tvRegBenefitFifth"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:singleLine="false"
+                                        android:text="@string/txtRegisterBenefitFifth"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/txtSizeMedium"
+                                        android:textStyle="bold" />
+                                </FrameLayout>
+                            </LinearLayout>
+                            -->
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRegBenefitFifth"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:layout_weight=".55"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/txtRegisterBenefitFifth"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeMedium"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvRegisterConfirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/borderStrokeRadius"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/txtWouldYouLikeToRegister"
+                android:textColor="@color/textBlueColor"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/txtSizeMedium"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <!-- android:layout_marginTop="@dimen/paddings_Contents" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/paddingButtons"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:layout_weight="2.7"
+                android:orientation="vertical" >
+
+                <!-- android:layout_marginBottom="@dimen/marginBottom_Buttons" -->
+
+                <Button
+                    android:id="@+id/btnYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:background="@drawable/button_bg_yes_green"
+                    android:gravity="center"
+                    android:text="@string/txtRegisterNowCaps"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtRegisterLaterCaps"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

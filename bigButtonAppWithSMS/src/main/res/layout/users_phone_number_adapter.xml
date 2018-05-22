@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/paddindMargins"
+        android:paddingRight="@dimen/paddindMargins"
+        android:paddingTop="@dimen/paddindMargins" >
+
+        <ImageView
+            android:id="@+id/imViewNumberIcon"
+            android:layout_width="@dimen/dimenPhoneNumberIcon"
+            android:layout_height="@dimen/dimenPhoneNumberIcon"
+            android:layout_marginLeft="@dimen/paddingButtons"
+            android:background="@drawable/phone_number_user"
+            android:contentDescription="@string/image" 
+            android:visibility="gone"/>
+        
+         <TextView
+            android:id="@+id/tvNumberTypeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textSkipColor"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="@dimen/paddingButtons"
+            android:textSize="@dimen/txtSizeNormal" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddindMargins"
+            android:singleLine="true"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDisableOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80ffffff"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llViewBorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangular_boundary_blue"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</FrameLayout>

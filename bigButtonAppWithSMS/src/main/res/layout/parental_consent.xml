@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvParentalConsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginLeft"
+                android:text="@string/txtParentalConsent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeLarger"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stripHeight"
+                android:layout_marginTop="@dimen/margin_LeftRightTop"
+                android:background="@color/stripDarkBlueColor" />
+
+            <TextView
+                android:id="@+id/tvParentalInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                android:layout_marginRight="@dimen/margin_LeftRightTop"
+                android:layout_marginTop="@dimen/margin_LeftRightTop"
+                android:gravity="center"
+                android:text="@string/txtParentalConsentInformation"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeMedium"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/llCheckBoxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginLeft"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/chkBoxUnderAge"
+                    android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                    android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/txtUnderAge"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvParentalConsentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/padding_marginEditText"
+                android:layout_marginTop="@dimen/marginLeft"
+                android:singleLine="true"
+                android:text="@string/txtParentalConsentStatus"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeNormal"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvParentGuardianLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_marginEditText"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/tvParentGuardian"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etGuardianEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginLeft="@dimen/padding_marginEditText"
+                android:layout_marginRight="@dimen/padding_marginEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginLeft"
+                android:layout_marginBottom="@dimen/marginLeft"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtCancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:background="@drawable/button_bg_createcall"
+                    android:gravity="center"
+                    android:text="@string/txtOk"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

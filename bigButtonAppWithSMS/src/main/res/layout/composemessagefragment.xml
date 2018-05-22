@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/txtComposeMessage"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stripHeight"
+        android:background="@color/stripDarkBlueColor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingEditTextLayout" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chkBoxHeight" >
+
+                <RadioGroup
+                    android:id="@+id/rgMessageType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:checkedButton="@+id/rbMessagetype"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbInitiation"
+                        android:layout_width="@dimen/chkBoxWidth"
+                        android:layout_height="@dimen/chkBoxHeight"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Initiation"
+                        android:textColor="@color/textBlueColor"
+                        android:textSize="@dimen/txtSizeNormal" />
+
+                    <RadioButton
+                        android:id="@+id/rbResponse"
+                        android:layout_width="@dimen/chkBoxWidth"
+                        android:layout_height="@dimen/chkBoxHeight"
+                        android:layout_marginLeft="@dimen/hor_verticalSpacing"
+                        android:layout_marginStart="@dimen/hor_verticalSpacing"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Response"
+                        android:textColor="@color/textBlueColor"
+                        android:textSize="@dimen/txtSizeNormal" />
+
+                    <RadioButton
+                        android:id="@+id/rbBoth"
+                        android:layout_width="@dimen/chkBoxWidth"
+                        android:layout_height="@dimen/chkBoxHeight"
+                        android:layout_marginLeft="@dimen/hor_verticalSpacing"
+                        android:layout_marginStart="@dimen/hor_verticalSpacing"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Both"
+                        android:textColor="@color/textBlueColor"
+                        android:textSize="@dimen/txtSizeNormal" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnDisableOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#80ffffff"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTypeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:singleLine="true"
+                android:text="@string/txtPleaseTypeMessage"
+                android:textColor="@color/darkGreyColor"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeMedium" />
+
+            <EditText
+                android:id="@+id/etComposeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditTextComposeMessage"
+                android:layout_marginTop="@dimen/paddingEditTextLayout"
+                android:background="@drawable/edittext_bg_name"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/paddingButtons"
+                android:scrollbars="none"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingEditTextLayout" >
+
+                <Button
+                    android:id="@+id/btnSaveMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtSaveMessage"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <!--
+                     <Button
+                    android:id="@+id/btnDisableSaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80ffffff" 
+                    android:visibility="visible"/>
+                -->
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_marginTop="@dimen/paddingEditTextLayout"
+                android:background="@drawable/button_bg_delete"
+                android:gravity="center"
+                android:text="@string/txtDelete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_marginTop="@dimen/paddingEditTextLayout"
+                android:background="@drawable/button_bg_skip"
+                android:gravity="center"
+                android:text="@string/txtCancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

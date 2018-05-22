@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/txtComposeMessage"
+            android:maxLines="2"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stripHeight"
+        android:background="@color/stripDarkBlueColor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingEditTextLayout" >
+
+            <TextView
+                android:id="@+id/tvTypeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:singleLine="true"
+                android:text="@string/txtPleaseTypeCategoryName"
+                android:textColor="@color/darkGreyColor"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeMedium" />
+
+            <EditText
+                android:id="@+id/etComposeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/paddingEditTextLayout"
+                android:background="@drawable/edittext_bg_name"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/paddingButtons"
+                android:maxLength="20"
+                android:scrollbars="none"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingEditTextLayout" >
+
+                <Button
+                    android:id="@+id/btnSaveMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtSaveCategory"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_marginTop="@dimen/paddingEditTextLayout"
+                android:background="@drawable/button_bg_delete"
+                android:gravity="center"
+                android:text="@string/txtDelete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

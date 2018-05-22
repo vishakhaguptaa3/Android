@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        android:background="@color/topBarColor" >
+
+        <FrameLayout
+            android:id="@+id/flBackArrow"
+            android:layout_width="@dimen/backIconLayoutWidth"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/topBarDarkBlue"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/backArrowWidth"
+                android:layout_height="@dimen/backArrowWidth"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flSettingButton"
+            android:layout_width="@dimen/backIconLayoutWidth"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/topBarDarkBlue"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="@dimen/backArrowWidth"
+                android:layout_height="@dimen/backArrowWidth"
+                android:layout_gravity="center"
+                android:background="@drawable/settings" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/heightPlayIconTopBar"
+                android:layout_height="@dimen/heightPlayIconTopBar"
+                android:background="@drawable/play_icon"
+                android:contentDescription="@string/image"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeftTitle"
+                android:layout_marginStart="@dimen/marginLeftTitle"
+                android:gravity="center"
+                android:shadowColor="@color/textColorTileContact"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.03"
+                android:text="@string/txtBigButton"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLargeMedium" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/txtTradeMarkSuperScript"
+                android:layout_toRightOf="@+id/tvTitle"
+                android:layout_alignTop="@+id/tvTitle"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:gravity="center"
+                android:textSize="@dimen/txtSizeTiny"/>
+        </RelativeLayout>
+
+        <!--  <Button
+             android:id="@+id/btnCall"
+             android:layout_width="@dimen/dimenCallButton"
+             android:layout_height="@dimen/dimenCallButton"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:layout_marginRight="5dp"
+             android:background="@drawable/add_btn_2"
+             android:visibility="visible" /> -->
+
+        <FrameLayout
+            android:id="@+id/flInformationButton"
+            android:layout_width="@dimen/backIconLayoutWidth"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/topBarDarkBlue"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnInformation"
+                android:layout_width="@dimen/backArrowWidth"
+                android:layout_height="@dimen/backArrowWidth"
+                android:layout_gravity="center"
+                android:background="@drawable/info"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="@dimen/backArrowWidth"
+                android:layout_height="@dimen/backArrowWidth"
+                android:layout_gravity="center"
+                android:background="@drawable/home"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</merge>

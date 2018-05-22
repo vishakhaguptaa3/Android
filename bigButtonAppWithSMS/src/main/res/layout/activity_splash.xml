@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/framelayout"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/height_PlayButton"
+            android:layout_height="@dimen/height_PlayButton"
+            android:background="@drawable/appicon_rounded_corner"
+            android:contentDescription="@string/image" />
+        <!-- android:background="@drawable/play_icon" -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_BottomLayout">
+
+            <TextView
+                android:id="@+id/txtBigButtonChatstasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/textColorTileContact"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.03"
+                android:layout_centerVertical="true"
+                android:text="@string/txtBigButton_Chatstasy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarger" />
+
+            <TextView
+                android:id="@+id/txtTradeMarkSuperScript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTradeMarkSuperScript"
+                android:layout_toRightOf="@+id/txtBigButtonChatstasy"
+                android:layout_alignTop="@+id/txtBigButtonChatstasy"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txtSizeSmall" />
+
+            <TextView
+                android:id="@+id/txtBigButtonFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtTradeMarkSuperScript"
+                android:shadowColor="@color/textColorTileContact"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.03"
+                android:text="@string/txtBigButton_Free"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarger"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtBigButtonPronounciation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/textColorTileContact"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="0.03"
+            android:text="@string/txtBigButtonPronounciation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_BottomLayout">
+
+            <TextView
+                android:id="@+id/txtAppInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/txtAppDescription"
+                android:textColor="#ABF2FF"
+                android:textSize="@dimen/txtSizeMedium" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtAppInformationRegistereSymbol"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/txtTradeMarkSuperScript"-->
+            <!--android:layout_marginTop="@dimen/paddingButtons"-->
+            <!--android:textSize="@dimen/txtSizeTiny"-->
+            <!--android:layout_marginLeft="@dimen/paddindMargins"-->
+            <!--android:layout_toRightOf="@+id/txtAppInformation"-->
+            <!--android:layout_alignTop="@+id/txtAppInformation"-->
+            <!--android:textColor="#ABF2FF"-->
+            <!--/>-->
+            <TextView
+                android:id="@+id/txtTradeMarkSuperScript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTradeMarkSuperScript"
+                android:layout_alignTop="@id/txtAppInformation"
+                android:layout_toRightOf="@id/txtAppInformation"
+                android:textColor="#ABF2FF"
+                android:textSize="@dimen/txtSizeTiny" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCopyRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/paddindMargins"
+        android:gravity="center_horizontal"
+        android:text="@string/txtCopyRight"
+        android:textColor="#ABF2FF"
+        android:textSize="@dimen/txtSizeNormal" />
+
+</FrameLayout>

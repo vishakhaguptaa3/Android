@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imViewMenuIcon"
+        android:layout_width="@dimen/dimenMenuIcon"
+        android:layout_height="@dimen/dimenMenuIconHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/paddingRightAdapter"
+        android:layout_marginStart="@dimen/paddingRightAdapter"
+        android:contentDescription="@string/image" />
+<!-- @dimen/dimenMenuIcon -->
+    <LinearLayout
+        android:id="@+id/llContactNameParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/paddingRightAdapter"
+        android:layout_marginLeft="@dimen/paddingLeftMenuTitle"
+        android:layout_marginRight="@dimen/paddingRightAdapter"
+        android:layout_marginStart="@dimen/paddingLeftMenuTitle"
+        android:layout_toEndOf="@id/imViewMenuIcon"
+        android:layout_toRightOf="@id/imViewMenuIcon"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/llContactNameHolder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".85"
+            android:gravity="center_vertical|start"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llContactNameHolderChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvMenuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textColor="@drawable/listitem_textcolor_selector"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtSizeMedium" />
+
+                <TextView
+                    android:id="@+id/tvMenuDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingLeftMenuTitle"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorGrey"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtSizeSmall"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llArrowHolder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imViewArrow"
+                android:layout_width="@dimen/arrowWidth"
+                android:layout_height="@dimen/arrowHeight"
+                android:background="@drawable/button_selector_arrow"
+                android:contentDescription="@string/image" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

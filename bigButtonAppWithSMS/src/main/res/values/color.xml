@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white1">#ffffff</color>
+    <color name="green">#559c5d</color>
+    <color name="blue1">#1d79C2</color>
+    <color name="textSkipColor">#3692db</color>
+    <color name="topBarColor">#3692DB</color>
+    <color name="textColorSplash">#abd4f4</color>
+    <color name="textBlueColor">#3692DB</color>
+    <color name="textGreyColorChooseConatct">#5d5c5c</color>
+    <color name="topBarDarkBlue">#2981C6</color>
+    <color name="textColorGrey">#929598</color>
+    <color name="textColorChedckedCont_Num">#9F9797</color>
+    <color name="txtColorClickOnImge">#A7A5A5</color>
+    <color name="stripDarkBlueColor">#1a649f</color>
+    <color name="stripLightBlueColor">#6fbaf6</color>
+    <color name="textViewBGChooseContact">#E9EEF2</color>
+    <color name="textColorFrom">#626b72</color>
+    <color name="bgEditText">#F2F2F2</color>
+    <color name="borderEditText">#E2DEDE</color>
+    <color name="gradientTop">#F7F8FA</color>
+    <color name="gradientBottom">#E7EBEE</color>
+    <color name="contactImageBackground">#ECEDEF</color>
+    <color name="tab_color">#2981C6</color>
+    <color name="textColorTileContact">#404448</color>
+    <color name="colorBorderContactTile">#C0C0C0</color>
+    <!-- <color name="colorNotificationTitle">#267abd</color> -->
+    <color name="colorNotificationImageBorder">#2E5F7D</color>
+    <color name="rowGreyColor">#EFEDED</color>
+    <color name="BackgroundColorSwipeListDelete">#FF3A2D</color>
+    <color name="backgroundQuickActionGrey">#A7AAAF</color>
+    <color name="bgUnreadMessageCount">#F83A3A</color>
+    <!-- <color name="txtColorGrey">#E2DEDE</color> -->
+    <color name="darkGreyColor">#555555</color>
+    <color name="textColorGreen">#00AA00</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_color">@color/fontcolor</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active_color">@color/text_title</color>
+
+
+    <!-- Facebook -->
+
+    <color name="background_app">#dedede</color>
+    <color name="white">#ffffff</color>
+    <color name="background_list_back">#e3e3e3</color>
+    <color name="background_list_front">#ffffff</color>
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+
+    <color name="line">#ffbcbcbc</color>
+    <color name="black_light">#f4f1e6</color>
+    <color name="black_light_trans">#80f4f1e6</color>
+    <color name="trans">#00000000</color>
+    <color name="background_new_tag">#ff0000</color>
+    <color name="text_new_tag">#ffffff</color>
+
+    <color name="blue">#999999</color>
+    <color name="blue_light">#949494</color>
+    <color name="blue_dark">#808080</color>
+    <color name="purple_light">#FFFFFF</color>
+    <color name="fontcolor">#999999</color>
+    <color name="tabHeader">#4fc1e9</color>
+
+    <color name="colorNavyBlue_MissedCallIndicator">#3734C6</color>
+
+
+    <!-- ActionSheet -->
+    <color name="cancelButtonTextColor">#1E82FF</color>
+    <color name="otherButtonTextColor">#1E82FF</color>
+    <color name="actionSheetTitleColor">#000000</color>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/paddindMargins">
+
+    <TextView
+        android:id="@+id/tvElderModeOption"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/toggleElderlyModeOption"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeMedium"/>
+
+   <!-- <ToggleButton
+        android:id="@+id/toggleElderlyModeOption"
+        style="@style/toggleButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/widthToggleHomeScreen"
+        android:layout_height="@dimen/heightToggleHomeScreen"
+        android:background="@drawable/ic_toggle_bg"
+        android:checked="false" />-->
+
+    <CheckBox
+        android:id="@+id/chkBoxElderlyModeOption"
+        android:layout_width="@dimen/dimenCheckBox"
+        android:layout_height="@dimen/dimenCheckBox"
+        android:checked="false"
+        android:focusable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/pop_up_background">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menuItemHeight"
+        android:gravity="center"
+        android:background="@color/stripDarkBlueColor"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeMedium"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/viewSeparatorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9c9c9c" />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/paddingButtons">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPageFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".82"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/paddingButtons"/>
+
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight=".10">
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_margin="@dimen/paddingButtons"
+                android:background="@drawable/button_bg_skip"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="@string/txtOk"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

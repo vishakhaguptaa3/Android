@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_up_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/popupWidth"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindPopUps" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/textSkipColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/messageMargin"
+            android:gravity="center"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingLeft="@dimen/paddingButtons"
+            android:paddingRight="@dimen/paddingButtons"
+            android:paddingStart="@dimen/paddingButtons"
+            android:textColor="@color/textGreyColorChooseConatct"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" />
+        <!--
+             android:layout_marginLeft="@dimen/messageMargin"
+            android:layout_marginRight="@dimen/messageMargin"
+        -->
+
+        <TextView
+            android:id="@+id/tvMessageSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/messageMargin"
+            android:gravity="center"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingLeft="@dimen/paddingButtons"
+            android:paddingRight="@dimen/paddingButtons"
+            android:paddingStart="@dimen/paddingButtons"
+            android:textColor="@color/textSkipColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9c9c9c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightButton"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".5"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/txtCancel"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeMedium" />
+
+        <View
+            android:id="@+id/viewSeparator"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#9c9c9c" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightButton"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".5"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/txtOk"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeMedium" />
+    </LinearLayout>
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/popupWidth"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textSkipColor"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/messageMargin"
+            android:layout_marginRight="@dimen/messageMargin"
+            android:layout_marginTop="@dimen/messageMargin"
+            android:paddingStart="@dimen/paddingButtons"
+            android:paddingLeft="@dimen/paddingButtons"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingRight="@dimen/paddingButtons"
+            android:gravity="center"
+            android:textColor="@color/textColorGrey"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/txtSizeMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/messageMargin"
+            android:layout_marginLeft="@dimen/messageMargin"
+            android:layout_marginRight="@dimen/messageMargin"
+            android:layout_marginTop="@dimen/messageMargin"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="@dimen/paddingButtons" >
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightButtons"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtNo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="@dimen/paddingButtons" >
+
+                <Button
+                    android:id="@+id/btnOk"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightButtons"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtYes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeMedium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+-->

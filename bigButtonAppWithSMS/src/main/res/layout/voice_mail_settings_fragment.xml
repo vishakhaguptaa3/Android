@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvVoiceMailHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/txtVoiceMailSettingsTitle"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".65"
+            android:background="@color/stripDarkBlueColor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".35"
+            android:background="@color/stripLightBlueColor" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/marginTop_Fields"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:textStyle="bold"
+                    android:text="@string/txtVoiceMessagingEnable"/>
+
+                <CheckBox
+                    android:id="@+id/chkBoxVoiceMailEnable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeNormal"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/txtVoiceMessageGreetings"/>
+
+            <TextView
+                android:id="@+id/tvRecordingAudioTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeNormal"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/llVolumeHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:layout_marginRight="@dimen/marginTop_Fields">
+
+                <ImageView
+                    android:id="@+id/imViewVolume"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_volume_disabled"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/marginLeftTitle">
+
+                    <Button
+                        android:id="@+id/btnVolumeIncrease"
+                        android:layout_width="@dimen/dimenCheckBox"
+                        android:layout_height="@dimen/dimenCheckBox"
+                        android:background="@drawable/ic_volume_increase_disable"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/llVolumeBarLevelContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnVolumeDecrease"
+                        android:layout_width="@dimen/dimenCheckBox"
+                        android:layout_height="@dimen/dimenCheckBox"
+                        android:background="@drawable/ic_volume_decrease_disable"/>
+                    <!-- android:layout_marginTop="@dimen/margin_LeftRightTop" -->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSeekBarHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvRecordCurrentDurationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:text="00:00"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarRecording"
+                    android:layout_width="@dimen/widthBtnPlay"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:indeterminate="false"/>
+
+                <TextView
+                    android:id="@+id/tvRecordTotalDurationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeNormal"/>
+                <!--android:max="100"
+                android:progress="15"-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnLoudSpeaker"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_speaker_disbaled"/>
+
+                <Button
+                    android:id="@+id/btnPlayRecording"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_play_recording_disabled"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+                <Button
+                    android:id="@+id/btnRecord"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_recording_audio_disabled"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+                <Button
+                    android:id="@+id/btnStopRecording"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_stop_recording_disabled"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

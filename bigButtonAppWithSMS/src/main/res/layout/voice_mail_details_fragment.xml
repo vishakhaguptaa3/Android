@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvCallDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtVoiceMessageDetailTitle"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".65"
+            android:background="@color/stripDarkBlueColor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".35"
+            android:background="@color/stripLightBlueColor" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/paddindMargins">
+
+        <Button
+            android:id="@+id/btnCallUserNumber"
+            android:layout_width="@dimen/heightTopBar"
+            android:layout_height="@dimen/heightTopBar"
+            android:background="@drawable/ic_call_mode_enabled"
+            android:layout_marginRight="@dimen/chkBoxWidth"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/heightInstructionLayout"
+            android:layout_height="@dimen/heightInstructionLayout"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img_back"
+            android:gravity="center">
+            <!-- dimenImageLayoutContacDetails -->
+            <ImageView
+                android:id="@+id/imViewUserImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/paddingButtons"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_image" />
+            <LinearLayout
+                android:id="@+id/llImageBorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangular_boundary_blue"
+                android:gravity="center"
+                android:layout_margin="@dimen/paddingButtons"
+                android:padding="@dimen/imageBorderWidth"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnChatUserNumber"
+            android:layout_width="@dimen/heightTopBar"
+            android:layout_height="@dimen/heightTopBar"
+            android:background="@drawable/ic_chat_mode_disabled"
+            android:layout_marginLeft="@dimen/chkBoxWidth"/>
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="@dimen/dimenImageLayoutContacDetails"
+         android:layout_height="@dimen/dimenImageLayoutContacDetails"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="@dimen/paddindMargins"
+         android:background="@drawable/img_back"
+         android:gravity="center" >
+
+         <ImageView
+             android:id="@+id/imViewUserImage"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="@dimen/paddingButtons"
+             android:contentDescription="@string/image"
+             android:scaleType="centerCrop"
+             android:src="@drawable/no_image" />
+     </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/paddingButtons"
+        android:gravity="center"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txtSizeMedium"
+        android:text="Arena Multimdeia"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="+91-9314618580"
+        android:textColor="#222222"
+        android:textSize="@dimen/txtSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvContactTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txtSizeMedium"
+        android:text="Today, 08:32 AM"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvCallDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/paddindMargins"
+        android:layout_marginTop="@dimen/paddingButtons"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/borderEditText"
+        android:dividerHeight="@dimen/viewHeight"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+    <!-- android:layout_height="@dimen/heightListViewPhoneNumbers" -->
+
+    <ScrollView
+        android:id="@+id/svMediaPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/marginTop_Fields"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llMediaPlayerHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/paddingButtons">
+
+            <LinearLayout
+                android:id="@+id/llVolumeHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:layout_marginRight="@dimen/marginTop_Fields">
+
+                <ImageView
+                    android:id="@+id/imViewVolume"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_volume_disabled"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/marginLeftTitle">
+
+                    <Button
+                        android:id="@+id/btnVolumeIncrease"
+                        android:layout_width="@dimen/dimenCheckBox"
+                        android:layout_height="@dimen/dimenCheckBox"
+                        android:background="@drawable/ic_volume_increase_disable"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/llVolumeBarLevelContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnVolumeDecrease"
+                        android:layout_width="@dimen/dimenCheckBox"
+                        android:layout_height="@dimen/dimenCheckBox"
+                        android:background="@drawable/ic_volume_decrease_disable"/>
+                    <!-- android:layout_marginTop="@dimen/margin_LeftRightTop" -->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSeekBarHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvRecordCurrentDurationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:text="00:00"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarRecording"
+                    android:layout_width="@dimen/widthBtnPlay"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:indeterminate="false"/>
+
+                <TextView
+                    android:id="@+id/tvRecordTotalDurationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeNormal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnLoudSpeaker"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_speaker_disbaled"/>
+
+                <Button
+                    android:id="@+id/btnShareVoiceMail"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:background="@drawable/ic_share_recording"/>
+
+                <Button
+                    android:id="@+id/btnPlayRecording"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:background="@drawable/ic_play_recording_disabled"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+                <Button
+                    android:id="@+id/btnStopRecording"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:background="@drawable/ic_stop_recording_red_button"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+                <Button
+                    android:id="@+id/btnDeleteVoiceMail"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:background="@drawable/ic_delete_recording"
+                    android:layout_marginLeft="@dimen/paddindMargins"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

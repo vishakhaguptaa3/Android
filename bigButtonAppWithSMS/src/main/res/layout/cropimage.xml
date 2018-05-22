@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <view
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        class="com.tnc.imagecropper.CropImageView"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/paddindMargins"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/paddindMargins"
+        android:paddingRight="@dimen/paddindMargins" >
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="@dimen/BtnWidth"
+            android:layout_height="@dimen/BtnHeight"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_bg_skip"
+            android:text="@string/txtOk"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSizeMedium" />
+
+        <ImageButton
+            android:id="@+id/rotateLeft"
+            style="@style/CropButton"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/save"
+            android:src="@drawable/ic_rotate_left"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/rotateRight"
+            style="@style/CropButton"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/widthImage"
+            android:layout_toRightOf="@id/rotateLeft"
+            android:src="@drawable/ic_rotate_right"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/discard"
+            android:layout_width="@dimen/BtnWidth"
+            android:layout_height="@dimen/BtnHeight"
+            android:layout_marginLeft="@dimen/marginBottomButtons"
+            android:layout_toRightOf="@id/rotateRight"
+            android:background="@drawable/button_bg_skip"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSizeMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

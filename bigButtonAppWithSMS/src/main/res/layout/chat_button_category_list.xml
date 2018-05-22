@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/llTopView">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rowGreyColor"
+        android:padding="@dimen/paddingGridItem" >
+
+        <TextView
+            android:id="@+id/tvChatButtonCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txtChatButtonCategory"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeMedium" />
+
+        <TextView
+            android:id="@+id/tvNew"
+            android:layout_width="@dimen/dimensButtons"
+            android:layout_height="@dimen/dimensButtons"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add_new" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvEditableMessagesFromDB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none" >
+    </ListView>
+</LinearLayout>

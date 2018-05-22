@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/llContactNameParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:layout_marginLeft="@dimen/paddingLeftAdapter"
+        android:layout_marginStart="@dimen/paddingLeftAdapter"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="8.3"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight=".96">
+
+                <FrameLayout
+                    android:id="@+id/llImageHolderparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" >
+
+
+                    <FrameLayout
+                        android:id="@+id/flImageHolder"
+                        android:layout_width="@dimen/dimenuserImageChat"
+                        android:layout_height="@dimen/dimenuserImageChat"
+                        android:background="@drawable/img_back"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/imViewContactImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/image"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_image" />
+
+                        <LinearLayout
+                            android:id="@+id/llContactNameHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rectangular_boundary_blue_tile_contacts"
+                            android:visibility="visible" >
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvContactName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeftName"
+                        android:layout_marginStart="@dimen/marginLeftName"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="@color/textGreyColorChooseConatct"
+                        android:textIsSelectable="false"
+                        android:text="Ankur Paliwal"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeftName"
+                        android:layout_marginStart="@dimen/marginLeftName"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/marginLeftName"
+                        android:textColor="@color/textBlueColor"
+                        android:textIsSelectable="false"
+                        android:text="Ankur Paliwal"
+                        android:textSize="@dimen/txtSizeNormal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_weight=".04">
+
+                <Button
+                    android:id="@+id/btnCategoryMenu"
+                    android:layout_width="@dimen/widthActionMenuIcon"
+                    android:layout_height="@dimen/heightActionMenuIcon"
+                    android:background="@drawable/ic_action_menu"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/llArrowHolder"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/chkBoxSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/paddingRightAdapter"
+                android:focusableInTouchMode="false"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/llContactNameParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:layout_marginLeft="@dimen/paddingLeftAdapter"
+        android:layout_marginStart="@dimen/paddingLeftAdapter"
+        android:layout_toLeftOf="@+id/llArrowHolder"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight=".96">
+
+            <FrameLayout
+                android:id="@+id/llImageHolderparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+
+
+            <FrameLayout
+                android:id="@+id/flImageHolder"
+                android:layout_width="@dimen/dimenuserImageChat"
+                android:layout_height="@dimen/dimenuserImageChat"
+                android:background="@drawable/img_back"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/imViewContactImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image" />
+
+                <LinearLayout
+                    android:id="@+id/llContactNameHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangular_boundary_blue_tile_contacts"
+                    android:visibility="visible" >
+                </LinearLayout>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvContactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeftName"
+                    android:layout_marginStart="@dimen/marginLeftName"
+
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/textGreyColorChooseConatct"
+                    android:textIsSelectable="false"
+                    android:text="Ankur Paliwal"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeftName"
+                    android:layout_marginStart="@dimen/marginLeftName"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/marginLeftName"
+                    android:textColor="@color/textBlueColor"
+                    android:textIsSelectable="false"
+                    android:text="Ankur Paliwal"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:layout_weight=".04">
+
+            <Button
+                android:id="@+id/btnCategoryMenu"
+                android:layout_width="@dimen/widthActionMenuIcon"
+                android:layout_height="@dimen/heightActionMenuIcon"
+                android:background="@drawable/ic_action_menu"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/llArrowHolder"
+        android:layout_width="@dimen/chkBoxHeight"
+        android:layout_height="@dimen/rowHeight"
+        android:layout_alignParentRight="true" >
+
+        <CheckBox
+            android:id="@+id/chkBoxSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:focusable="false"
+            android:layout_centerInParent="true"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>-->

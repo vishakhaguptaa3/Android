@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:clickable="true" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightTopBar"
+            layout="@layout/topbar" />
+        
+            
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+            
+     
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddindMargins" >
+
+                    <LinearLayout
+                        android:id="@+id/llImageBoundary"
+                        android:layout_width="@dimen/imageNotificationBorder"
+                        android:layout_height="@dimen/imageNotificationBorder"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/notification_image_border_grey"
+                        android:gravity="center"
+                        android:padding="@dimen/imageBorderWidth"
+                        android:visibility="gone" >
+
+                        <com.tnc.utility.RoundedImageViewCircular
+                            android:id="@+id/imViewNotificationContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/image"
+                            android:padding="@dimen/paddingUserImage"
+                            android:scaleType="fitXY" >
+                        </com.tnc.utility.RoundedImageViewCircular>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddindMargins"
+                        android:layout_marginStart="@dimen/paddindMargins"
+                        android:layout_toEndOf="@+id/llImageBoundary"
+                        android:layout_toRightOf="@+id/llImageBoundary"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/tvQuestion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center_vertical"
+                                android:singleLine="false"
+                                android:textColor="@color/textBlueColor"
+                                android:textIsSelectable="false"
+                                android:text="dfsgfsggg"
+                                android:textSize="@dimen/txtSizeLarge" />
+
+                            <TextView
+                                android:id="@+id/tvTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:singleLine="true"
+                                android:textColor="@color/textColorFrom"
+                                android:textIsSelectable="false"
+                                android:textSize="@dimen/txtSizeLarge" />
+                        </FrameLayout>
+
+                        <!-- <TextView
+                            android:id="@+id/tvAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTopNotificationDetail"
+                            android:singleLine="false"
+                            android:textColor="@android:color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/txtSizeMedium" 
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            
+                            /> -->
+                            
+                            <WebView
+                            android:id="@+id/tvAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTopNotificationDetail"
+                            
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end|center_vertical"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/marginTopNotificationDetail"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/btnUpdateNumber"
+                                    android:layout_width="@dimen/replyButtonWidth"
+                                    android:layout_height="@dimen/replyButtonHeight"
+                                    android:layout_marginRight="@dimen/marginBottomButtons"
+                                    android:background="@drawable/button_bg_skip"
+                                    android:gravity="center"
+                                    android:text="@string/txtUpdateSmall"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txtSizeNormal"
+                                    android:visibility="gone" />
+
+                                <Button
+                                    android:id="@+id/btnAccept"
+                                    android:layout_width="@dimen/replyButtonWidth"
+                                    android:layout_height="@dimen/replyButtonHeight"
+                                    android:layout_marginRight="@dimen/marginBottomButtons"
+                                    android:background="@drawable/button_bg_skip"
+                                    android:gravity="center"
+                                    android:text="@string/txtAccept"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txtSizeNormal"
+                                    android:visibility="gone" />
+
+                                <Button
+                                    android:id="@+id/btnReply"
+                                    android:layout_width="@dimen/replyButtonWidth"
+                                    android:layout_height="@dimen/replyButtonHeight"
+                                    android:background="@drawable/button_bg_skip"
+                                    android:gravity="center"
+                                    android:text="@string/txtreply"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txtSizeNormal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        
+                        
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            
+        </ScrollView>
+        
+      
+    </LinearLayout>
+
+</RelativeLayout>

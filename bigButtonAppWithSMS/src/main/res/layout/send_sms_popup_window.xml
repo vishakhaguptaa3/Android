@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightEditText"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/paddindMargins"
+        android:background="@drawable/edittext_bg_name"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/padding_marginEditText"
+        android:paddingLeft="@dimen/padding_marginEditText"
+        android:paddingRight="@dimen/padding_marginEditText"
+        android:paddingStart="@dimen/padding_marginEditText" >
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="@string/txtTo"
+            android:textColor="@color/darkGreyColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <EditText
+            android:id="@+id/etTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:inputType="text"
+            android:paddingEnd="@dimen/padding_marginEditText"
+            android:paddingLeft="@dimen/padding_marginEditText"
+            android:paddingRight="@dimen/padding_marginEditText"
+            android:paddingStart="@dimen/padding_marginEditText"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/paddindMargins" >
+
+        <RelativeLayout
+            android:id="@+id/rlMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/paddindMargins" >
+
+            <Button
+                android:id="@+id/btnSendMessage"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/btnSendWidth"
+                android:layout_height="@dimen/heightEdittextMessage"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/hor_verticalSpacing_ClipArt"
+                android:layout_marginLeft="@dimen/paddindMargins"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/button_bg_skip"
+                android:text="@string/txtSend"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancelMessage"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/btnSendWidth"
+                android:layout_height="@dimen/heightEdittextMessage"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnSendMessage"
+                android:layout_marginEnd="@dimen/hor_verticalSpacing_ClipArt"
+                android:layout_marginLeft="@dimen/paddindMargins"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/button_bg_skip"
+                android:text="@string/txtCancel"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/heightSMSBox"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:layout_toLeftOf="@+id/btnSendMessage"
+                android:background="@drawable/edittext_bg_name"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:paddingTop="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeMedium" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlMessage"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="@string/txtMessage"
+            android:textColor="@color/darkGreyColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" >
+        </TextView>
+    </RelativeLayout>
+
+</FrameLayout><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:paddingBottom="@dimen/margins_LeftRight"
+            android:paddingTop="@dimen/margins_LeftRight" >
+
+            android:paddingTop="@dimen/margins_LeftRight"
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/paddindMargins"
+                android:background="@drawable/edittext_bg_name"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText" >
+
+                <TextView
+                    android:id="@+id/tvTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/txtTo"
+                    android:textColor="@color/darkGreyColor"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtSizeLarge" />
+                
+     android:layout_marginLeft="@dimen/paddindMargins"
+            android:layout_marginStart="@dimen/paddindMargins"
+               
+
+                <EditText
+                    android:id="@+id/etTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:inputType="text"
+                    android:paddingEnd="@dimen/padding_marginEditText"
+                    android:paddingLeft="@dimen/padding_marginEditText"
+                    android:paddingRight="@dimen/padding_marginEditText"
+                    android:paddingStart="@dimen/padding_marginEditText"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+            
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/paddindMargins"
+        android:layout_marginStart="@dimen/paddindMargins"
+        android:layout_marginTop="@dimen/hor_verticalSpacing_ClipArt"
+        android:singleLine="true"
+        android:text="@string/txtTo"
+        android:textColor="@color/darkGreyColor"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeLarge" />
+    paddindMargins
+
+    <EditText
+        android:id="@+id/etTo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightEditText"
+        android:layout_below="@+id/tvTo"
+        android:layout_margin="@dimen/paddindMargins"
+        android:layout_marginTop="@dimen/padding_marginEditText"
+        android:background="@drawable/edittext_bg_name"
+        android:inputType="text"
+        android:paddingEnd="@dimen/padding_marginEditText"
+        android:paddingLeft="@dimen/padding_marginEditText"
+        android:paddingRight="@dimen/padding_marginEditText"
+        android:paddingStart="@dimen/padding_marginEditText"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txtSizeLarge" />
+           
+
+            <RelativeLayout
+                android:id="@+id/rlMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/paddindMargins"
+                android:orientation="horizontal"
+                android:padding="@dimen/paddindMargins" >
+
+                <Button
+                    android:id="@+id/btnSendMessage"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="@dimen/btnSendWidth"
+                    android:layout_height="@dimen/heightEdittextMessage"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/hor_verticalSpacing_ClipArt"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/padding_marginEditText"
+                    android:background="@drawable/button_bg_skip"
+                    android:text="@string/txtSend"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCancelMessage"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="@dimen/btnSendWidth"
+                    android:layout_height="@dimen/heightEdittextMessage"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btnSendMessage"
+                    android:layout_marginEnd="@dimen/hor_verticalSpacing_ClipArt"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/padding_marginEditText"
+                    android:background="@drawable/button_bg_skip"
+                    android:text="@string/txtCancel"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/heightSMSBox"
+                    android:layout_marginTop="@dimen/padding_marginEditText"
+                    android:layout_toLeftOf="@+id/btnSendMessage"
+                    android:background="@drawable/edittext_bg_name"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine"
+                    android:paddingEnd="@dimen/padding_marginEditText"
+                    android:paddingLeft="@dimen/padding_marginEditText"
+                    android:paddingRight="@dimen/padding_marginEditText"
+                    android:paddingStart="@dimen/padding_marginEditText"
+                    android:paddingTop="@dimen/padding_marginEditText"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeMedium" />
+
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etMessage"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="@string/txtMessage"
+            android:textColor="@color/darkGreyColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium" >
+        </TextView>
+               
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rlMessage"
+                android:layout_marginLeft="@dimen/paddindMargins"
+                android:layout_marginStart="@dimen/paddindMargins"
+                android:singleLine="true"
+                android:text="@string/txtMessage"
+                android:textColor="@color/darkGreyColor"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeLarge" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+-->

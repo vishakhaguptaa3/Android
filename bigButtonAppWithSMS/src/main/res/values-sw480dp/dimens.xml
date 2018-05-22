@@ -1,0 +1,273 @@
+<resources>
+
+    <!-- text size -->
+    <dimen name="txtSizeXLarge">40sp</dimen>
+    <dimen name="txtSizeLarger">30sp</dimen>
+    <dimen name="txtSizeMedium">18sp</dimen>
+    <dimen name="txtSizeNormal">17sp</dimen>
+    <dimen name="txtSizeLarge">30sp</dimen>
+    <dimen name="txtSizeMidRange">20sp</dimen>
+    <dimen name="txtSizeLargeMedium">26sp</dimen>
+    <dimen name="txtSizeSmall">12sp</dimen>
+    <dimen name="txtSizeTiny">9sp</dimen>
+
+    <!-- View -->
+    <dimen name="viewHeight">1dp</dimen>
+    <dimen name="paddingMargins_Left">35dp</dimen>
+    <dimen name="paddingMargins_Right">25dp</dimen>
+    <!-- Splash Screen -->
+    <dimen name="height_PlayButton">180dp</dimen>
+    <!-- <dimen name="marginBottomButton">30dp</dimen> -->
+
+
+    <!-- video screen -->
+    <dimen name="marginTopSkipButton">20dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="marginTopText">15dp</dimen>
+    <!-- <dimen name="heightVideoViewer">220dp</dimen> -->
+    <dimen name="marginTop_TextVideoInformation">20dp</dimen>
+    <dimen name="marginTop_BottomLayout">10dp</dimen>
+    <dimen name="heightBtnSkip">50dp</dimen>
+    <dimen name="widthBtnSkip">180dp</dimen>
+    <dimen name="heightBtnPlay">165dp</dimen>
+    <dimen name="widthBtnPlay">160dp</dimen>
+    <!-- top bar -->
+    <dimen name="heightTopBar">55dp</dimen>
+    <dimen name="heightPlayIconTopBar">35dp</dimen>
+    <dimen name="marginLeftTitle">5dp</dimen>
+    <dimen name="backIconLayoutWidth">70dp</dimen>
+    <dimen name="backArrowWidth">35dp</dimen>
+    <!-- create call fragment -->
+    <dimen name="marginTopdescription">30dp</dimen>
+    <dimen name="marginTopButton">130dp</dimen>
+    <dimen name="marginLRButtonLayout">15dp</dimen>
+    <dimen name="radiusSkipButtonCorner">10dp</dimen>
+    <!-- choose contact -->
+    <dimen name="paddindMargins">15dp</dimen>
+    <dimen name="stripHeight">10dp</dimen>
+    <dimen name="iconHeight">50dp</dimen>
+    <!-- Confrmation Dialog -->
+    <dimen name="popupWidth">300dp</dimen>
+    <dimen name="messageMargin">10dp</dimen>
+    <dimen name="paddingButtons">5dp</dimen>
+    <dimen name="heightButtons">40dp</dimen>
+    <!-- Contact List -->
+    <dimen name="paddingSearchBar">10dp</dimen>
+    <dimen name="alphabetListWidth">50dp</dimen>
+    <!-- Contact List Adapter -->
+    <dimen name="rowHeight">75dp</dimen>
+    <dimen name="paddingLeftAdapter">30dp</dimen>
+    <dimen name="paddingRightAdapter">15dp</dimen>
+    <dimen name="arrowHeight">20dp</dimen>
+    <dimen name="arrowWidth">15dp</dimen>
+    <dimen name="tagWidth">40dp</dimen>
+    <dimen name="tagHeight">20dp</dimen>
+    <dimen name="contactImageDimensions">60dp</dimen>
+    <dimen name="marginLeftName">5dp</dimen>
+    <!-- Contact Details/Create Contact -->
+    <dimen name="emergencyIcon">20dp</dimen>
+    <dimen name="margin_Top">25dp</dimen>
+    <dimen name="margin_LeftRightTop">15dp</dimen>
+    <dimen name="heightEditText">50dp</dimen>
+    <dimen name="heightEditTextSmall">40dp</dimen>
+    <dimen name="heightContactNumlayout">150dp</dimen>
+    <dimen name="heightContactNumlayoutInUse">150dp</dimen>
+    <dimen name="padding_marginEditText">5dp</dimen>
+    <dimen name="chkBoxHeight">40dp</dimen>
+    <dimen name="chkBoxWidth">40dp</dimen>
+
+    <dimen name="dimenCheckBox">33dp</dimen>
+    <!-- Choose Image -->
+    <dimen name="marginTop_Skip">10dp</dimen>
+    <dimen name="margins_LeftRight">25dp</dimen>
+    <!-- Request Image +Registration Features -->
+    <dimen name="paddings">15dp</dimen>
+    <dimen name="heightImageLayout">200dp</dimen>
+    <dimen name="heightImage">100dp</dimen>
+    <dimen name="widthImage">100dp</dimen>
+    <dimen name="marginBottom_Buttons">10dp</dimen>
+    <dimen name="marginBottom_Name">5dp</dimen>
+    <dimen name="scrollHeight">250dp</dimen>
+    <!-- User Registration -->
+    <dimen name="marginTop_Fields">15dp</dimen>
+    <dimen name="dimenImageLayoutUserRegistartion">120dp</dimen>
+    <dimen name="marginTopImageContent">15dp</dimen>
+    <!-- Registration Features -->
+    <dimen name="heightInstructionLayout">80dp</dimen>
+    <dimen name="heightInstructionLayoutSecond">60dp</dimen>
+    <dimen name="heightInstructionLayoutLast">45dp</dimen>
+    <dimen name="heightCheckBox">30dp</dimen>
+    <dimen name="paddings_Contents">10dp</dimen>
+    <dimen name="paddings_Features">15dp</dimen>
+    <!-- Gallery Images -->
+    <!-- <dimen name="gridImageHeight">150dp</dimen> -->
+    <dimen name="photo_side">150dp</dimen>
+    <dimen name="hor_verticalSpacing">3dp</dimen>
+    <dimen name="hor_verticalSpacing_ClipArt">2dp</dimen>
+    <dimen name="verSpacing">2dp</dimen>
+    <dimen name="verSpacing_ClipArt">0dp</dimen>
+    <!-- Gallery Adapter.Xml -->
+    <dimen name="paddingGridItem">10dp</dimen>
+    <!-- PopUp Background -->
+    <dimen name="pop_up_radius_gradient">5dp</dimen>
+    <dimen name="heightButton">50dp</dimen>
+    <dimen name="paddindPopUps">10dp</dimen>
+    <!-- Home Screen Activity -->
+    <dimen name="marginTopContents">10dp</dimen>
+    <dimen name="dimensButtons">50dp</dimen>
+    <dimen name="dimensCallMessage">30dp</dimen>
+    <dimen name="heightMessage">32dp</dimen>
+    <dimen name="heightToggle">37dp</dimen>
+    <dimen name="widthToggle">75dp</dimen>
+    <dimen name="heightToggleHomeScreen">27dp</dimen>
+    <dimen name="widthToggleHomeScreen">55dp</dimen>
+    <dimen name="heightNextPreviousArroHomeScreen">40dp</dimen>
+    <dimen name="widthNextPreviousArroHomeScreen">55dp</dimen>
+    <dimen name="marginBottonHomeScreenGridView">46dp</dimen>
+    <dimen name="tab_padding">2dp</dimen>
+    <dimen name="tab_image_size">30dp</dimen>
+    <dimen name="tab_notification_marginRightEnd">15dp</dimen>
+    <dimen name="gridImagemargins">8dp</dimen>
+    <dimen name="gridVerticalSpacing">5dp</dimen>
+    <dimen name="gridHorizontalSpacing">2dp</dimen>
+    <dimen name="widthCallButton">60dp</dimen>
+    <dimen name="dimenCallButton">57dp</dimen>
+    <dimen name="heightSelectedTab">60dp</dimen>
+    <dimen name="tabSelectedRadius">5dp</dimen>
+    <dimen name="borderStrokeWidthLeft_Right">5dp</dimen>
+    <dimen name="borderStrokeWidthTop">5dp</dimen>
+    <dimen name="borderStrokeWidth_Bottom">5dp</dimen>
+    <dimen name="contact_tile_bg_border">5dp</dimen>
+    <dimen name="borderStrokeTag">4dp</dimen>
+    <dimen name="borderStrokeWidthBottom">5dp</dimen>
+    <dimen name="borderStrokeRadius">3dp</dimen>
+    <dimen name="tagMargin">4dp</dimen>
+    <dimen name="paddingHomeScreenTileImage">8dp</dimen>
+    <dimen name="UserImageDisplayHeight">10dp</dimen>
+    <dimen name="UserImageDisplayWidth">5dp</dimen>
+    <dimen name="dimenBGunreadMessageCount">21dp</dimen>
+    <dimen name="marginRightUnreadMessageCount">15dp</dimen>
+    <dimen name="marginUnreadNotificationCount">-16dp</dimen>
+    <dimen name="tileImageDimensionwidth">85dp</dimen>
+    <dimen name="tileImageDimensionheight">110dp</dimen> <!-- 89dp -->
+    <!-- Setting Menu Adapter -->
+    <dimen name="paddingLeftMenuTitle">5dp</dimen>
+    <dimen name="dimenMenuIcon">33dp</dimen>
+    <dimen name="dimenMenuIconHeight">34dp</dimen>
+    <!-- Cloud Backup Adapter -->
+    <dimen name="rowHeight_Setting_CloudAdapter">70dp</dimen>
+    <dimen name="widthMenuIconCloudBackupAdapter">32dp</dimen>
+    <dimen name="heightMenuIconCloudBackupAdapter">37dp</dimen>
+    <!-- Crop image View -->
+    <dimen name="BtnHeight">40dp</dimen>
+    <dimen name="BtnWidth">80dp</dimen>
+    <dimen name="marginBottomButtons">10dp</dimen>
+    <!-- Tile Preview -->
+    <dimen name="margintopImage">5dp</dimen>
+    <dimen name="tag_Width">90dp</dimen>
+    <dimen name="tag_Height">50dp</dimen>
+    <dimen name="chkBoxDimenEmergencyContact">30dp</dimen>
+    <dimen name="heightTextViewImageRequestedMessage">140dp</dimen>
+    <!-- Recover Cloud on same Phone -->
+    <dimen name="paddingContentRecover">10dp</dimen>
+    <dimen name="marginTopSub">5dp</dimen>
+    <dimen name="iconDimension">40dp</dimen>
+    <!-- Backup Restore -->
+    <dimen name="paddingContentsBackupRestore">10dp</dimen>
+    <!-- backup List -->
+    <dimen name="paddingBackupListInf">15dp</dimen>
+    <dimen name="heightListDivider">1dp</dimen>
+    <!-- backup List Adapter -->
+    <dimen name="dimenClockIcon">30dp</dimen>
+    <!-- Notification Adapter -->
+    <dimen name="imageNotificationBorder">75dp</dimen>
+    <dimen name="paddingUserImage">8dp</dimen>
+    <dimen name="imageBorderWidth">4dp</dimen>
+    <dimen name="imageBorderWidth_tileContacts">1dp</dimen>
+    <dimen name="imageBorderRadius">14dp</dimen>
+    <dimen name="paddingTextNotificationtext">5dp</dimen>
+    <dimen name="rowHeightNotifications">90dp</dimen>
+    <dimen name="marginTopNotificationDetail">5dp</dimen>
+    <dimen name="marginTopReplyButton">15dp</dimen>
+    <dimen name="replyButtonHeight">35dp</dimen>
+    <dimen name="replyButtonWidth">130dp</dimen>
+
+    <dimen name="createChatButtonHeight">40dp</dimen>
+    <dimen name="createChatButtonWidth">140dp</dimen>
+
+    <!-- Select Image Popup -->
+    <dimen name="menuItemHeight">50dp</dimen>
+    <!-- Message Predefined List -->
+    <dimen name="dimenuserImage">55dp</dimen>
+    <!-- Message List Adapter -->
+    <dimen name="marginLeftRight_MessageDetailAdapter">5dp</dimen>
+    <!-- Message Chat List -->
+    <dimen name="dimenMessageUserImage">80dp</dimen>
+    <dimen name="dimenStatusIndicator">20dp</dimen>
+    <dimen name="heightEdittextMessage">50dp</dimen>
+    <dimen name="heightPredefinedMessageList">280dp</dimen>
+    <dimen name="heightetChatBox">60dp</dimen>
+    <dimen name="heightUserDetailLayout">70dp</dimen>
+    <dimen name="dimenuserImageChat">55dp</dimen>
+    <dimen name="btnSendWidth">90dp</dimen>
+
+    <!-- Compose Message -->
+    <dimen name="heightEditTextComposeMessage">370dp</dimen>
+    <dimen name="paddingEditTextLayout">15dp</dimen>
+    <!-- init response messages fragment -->
+    <dimen name="heighRowBar">40dp</dimen>
+    <dimen name="heightListDB">120dp</dimen>
+    <!-- Send SMS PopUp -->
+    <dimen name="heightSMSBox">150dp</dimen>
+
+    <!-- Tiles Contact List -->
+    <dimen name="dimenuserImageTilesContactList">60dp</dimen>
+    <dimen name="dimenCallButtonConfigure">45dp</dimen>
+
+    <!-- DialPad -->
+    <dimen name="dimenDialPadWidth">280dp</dimen>
+    <dimen name="widthDialPadBox">300dp</dimen>
+    <dimen name="dimenDialPadNum">70dp</dimen>
+    <dimen name="widthDialPadNum">85dp</dimen>
+    <dimen name="dimenBtnClear">50dp</dimen>
+    <dimen name="dimenCallButtonDialPad">65dp</dimen>
+    <dimen name="widthClearButton">50dp</dimen>
+    <dimen name="heightClearButton">51dp</dimen>
+    <dimen name="dimenCreateContactIcon">35dp</dimen>
+    <dimen name="dimenDialledCallButton">30dp</dimen>
+
+    <!-- International Emergency Numbers Adapter -->
+    <dimen name="alphabetListWidthIntlEmergency">30dp</dimen>
+    <dimen name="rowHeightInternationalNumberDial">45dp</dimen>
+    <dimen name="dimenCallIntlEmergency">35dp</dimen>
+
+    <!-- Contact Us -->
+    <dimen name="heightAttachmentIcon">29dp</dimen>
+    <dimen name="widthAttachmentIcon">24dp</dimen>
+
+    <!-- Contact Details Screen -->
+    <dimen name="dimenImageLayoutContacDetails">110dp</dimen>
+    <dimen name="widthEmailIconContactDetails">20dp</dimen>
+    <dimen name="heightEmailIconContactDetails">15dp</dimen>
+    <dimen name="dimenPhoneNumberIcon">20dp</dimen>
+    <dimen name="heightListViewPhoneNumbers">100dp</dimen>
+    <dimen name="heigthphoneNumberPopup">120dp</dimen>
+
+    <!-- SelectUserNumberPopup -->
+    <dimen name="rowHeightNumberPopupView">40dp</dimen>
+
+    <!-- User Info -->
+    <dimen name="heightFlagIcon">28dp</dimen>
+    <dimen name="widthFlagIcon">38dp</dimen>
+    <dimen name="widthcheckboxUnderAge">150dp</dimen>
+
+    <dimen name="heightActionMenuIcon">30dp</dimen>
+    <dimen name="widthActionMenuIcon">10dp</dimen>
+
+    <dimen name="dimenLocationIcon">30dp</dimen>
+
+    <!-- new Registration Dimension-->
+    <dimen name="paddingLayout">20dp</dimen>
+
+
+</resources>

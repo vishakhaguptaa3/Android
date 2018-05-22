@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+
+android {
+
+    signingConfigs {
+        config {
+            keyAlias 'tapnchat_keystore'
+            keyPassword '123456'
+            storeFile file('/home/a3logics/Downloads/Big Button App Docs/KeyStore/tapnchat_keystore.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.tnc"
+        minSdkVersion 15
+        targetSdkVersion 27
+        // Enabling multidex support.
+        multiDexEnabled true
+
+        signingConfig signingConfigs.config
+    }
+    dexOptions
+            {
+                javaMaxHeapSize "4g"
+                preDexLibraries = false
+            }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            debuggable true
+            zipAlignEnabled true
+        }
+    }
+    productFlavors {
+    }
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+repositories {
+    maven {
+        url uri('mint-plugin-repo-5.2.2')
+    }
+    // Will need to add jcenter repo OR mavenCentral
+    jcenter()
+    mavenCentral()
+}
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':pullToRefreshListView')
+    implementation 'me.leolin:ShortcutBadger:1.1.16@aar'
+
+    implementation 'com.google.android.gms:play-services-maps:11.6.0'
+    implementation 'com.google.android.gms:play-services-location:11.6.0'
+    implementation 'com.google.android.gms:play-services-auth:11.6.0'
+
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
+
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'joda-time:joda-time:2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    // recycler view
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.android.gms:play-services:11.6.0'
+    implementation 'com.google.firebase:firebase-core:11.6.0'
+    implementation 'com.google.firebase:firebase-database:11.6.0'
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.14'
+    // okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+
+
+    implementation project(':library')
+    implementation project(':actionSheetlibrary')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+}
+apply plugin: 'com.google.gms.google-services'

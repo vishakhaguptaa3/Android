@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+     <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" 
+        android:layout_gravity="top"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/paddindMargins"
+            android:text="@string/txtVerifyingRegistration"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="@dimen/heightListDB"
+            android:layout_height="@dimen/heightEdittextMessage"
+            android:layout_marginTop="@dimen/replyButtonHeight"
+            android:background="@drawable/button_bg_skip"
+            android:text="@string/txtRetry"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="@dimen/heightListDB"
+            android:layout_height="@dimen/heightEdittextMessage"
+            android:layout_marginTop="@dimen/paddindMargins"
+            android:background="@drawable/button_bg_skip"
+            android:text="@string/txt_Skip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+</FrameLayout>

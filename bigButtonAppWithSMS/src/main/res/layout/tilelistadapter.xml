@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlGridContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="@dimen/paddingButtons" > <!-- @android:color/transparent #FDFDFD -->
+
+    <FrameLayout
+        android:id="@+id/flImageHolder"
+        android:layout_width="@dimen/dimenuserImageTilesContactList"
+        android:layout_height="@dimen/dimenuserImageTilesContactList"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/paddindMargins"
+        android:background="@drawable/img_back"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imViewUserImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image" />
+        <!-- android:padding="@dimen/hor_verticalSpacing_ClipArt" -->
+
+        <LinearLayout
+            android:id="@+id/llViewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangular_boundary_blue_tile_contacts"
+            android:visibility="visible" >
+        </LinearLayout>
+        <!-- @dimen/tileImageDimensionwidth  </LinearLayout> -->
+
+        <ImageView
+            android:id="@+id/imViewTag"
+            android:layout_width="@dimen/tagWidth"
+            android:layout_height="@dimen/tagHeight"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/tag"
+            android:contentDescription="@string/image"
+            android:visibility="gone" />
+
+        <!--
+             <ImageView
+            android:id="@+id/imViewEmergency"
+            android:layout_width="@dimen/emergencyIcon"
+            android:layout_height="@dimen/emergencyIcon"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/emergency_icon"
+            android:contentDescription="@string/image"
+            android:visibility="gone" />
+        -->
+
+        <TextView
+            android:id="@+id/tvImagePending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txtSizeSmall" />
+
+        <ImageView
+            android:id="@+id/imViewEmergency"
+            android:layout_width="@dimen/arrowWidth"
+            android:layout_height="@dimen/arrowWidth"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/emergency_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/paddindMargins"
+        android:layout_toRightOf="@+id/flImageHolder"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/borderStrokeWidthLeft_Right"
+            android:paddingLeft="@dimen/borderStrokeWidthLeft_Right"
+            android:paddingRight="@dimen/borderStrokeWidthLeft_Right"
+            android:paddingStart="@dimen/borderStrokeWidthLeft_Right"
+            android:singleLine="true"
+            android:textColor="@color/textBlueColor"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paddingButtons"
+            android:gravity="left"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/borderStrokeWidthLeft_Right"
+            android:paddingLeft="@dimen/borderStrokeWidthLeft_Right"
+            android:paddingRight="@dimen/borderStrokeWidthLeft_Right"
+            android:paddingStart="@dimen/borderStrokeWidthLeft_Right"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeNormal"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imViewArrow"
+        android:layout_width="@dimen/arrowWidth"
+        android:layout_height="@dimen/arrowHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/paddindMargins"
+        android:background="@drawable/button_selector_arrow"
+        android:contentDescription="@string/image" />
+
+    <!-- android:layout_marginTop="@dimen/borderStrokeRadius" -->
+    <!--
+     android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+    -->
+
+    <CheckBox
+        android:id="@+id/chkBoxSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imViewArrow"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/tvDuplicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkBoxSelection"
+         android:layout_toLeftOf="@+id/chkBoxSelection"
+        android:textColor="@color/textColorGreen"
+        android:textSize="@dimen/txtSizeNormal"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

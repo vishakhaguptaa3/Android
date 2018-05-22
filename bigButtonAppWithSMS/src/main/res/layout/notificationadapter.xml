@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <!-- android:gravity="center_vertical" -->
+
+    <FrameLayout
+        android:id="@+id/llImageHolderparent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rowHeightNotifications"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llImageBoundary"
+            android:layout_width="@dimen/imageNotificationBorder"
+            android:layout_height="@dimen/imageNotificationBorder"
+            android:layout_gravity="center"
+            android:background="@drawable/notification_image_border_grey"
+            android:gravity="center"
+            android:padding="@dimen/imageBorderWidth" >
+
+            <com.tnc.utility.RoundedImageViewCircular
+                android:id="@+id/imViewNotificationContact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/no_image"
+                android:contentDescription="@string/image" >
+            </com.tnc.utility.RoundedImageViewCircular>
+            <!-- android:padding="@dimen/paddingUserImage" -->
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llNotificationHolder"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rowHeightNotifications"
+        android:layout_marginTop="@dimen/paddingTextNotificationtext"
+        android:layout_weight=".68"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingTextNotificationtext" >
+
+        <FrameLayout
+            android:id="@+id/flNotificationHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/textBlueColor"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeMedium" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvNotificationDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeNormal" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtonHolder"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rowHeightNotifications"
+        android:layout_weight=".12"
+        android:gravity="center_vertical|end"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingTextNotificationtext" >
+
+        <ImageView
+            android:id="@+id/imViewArrow"
+            android:layout_width="@dimen/arrowWidth"
+            android:layout_height="@dimen/arrowHeight"
+            android:background="@drawable/button_selector_arrow"
+            android:contentDescription="@string/image" />
+    </LinearLayout>
+
+</LinearLayout>

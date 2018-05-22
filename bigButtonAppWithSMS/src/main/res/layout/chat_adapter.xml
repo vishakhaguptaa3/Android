@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/borderStrokeWidthLeft_Right" >
+
+    <LinearLayout
+        android:id="@+id/llSendmessage_row_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/paddindMargins"
+        android:paddingLeft="@dimen/paddindMargins"
+        android:paddingRight="@dimen/paddindMargins"
+        android:paddingStart="@dimen/paddindMargins"
+        android:visibility="invisible"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tvMsg_sendmessage_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:autoLink="web"
+            android:background="@drawable/chat_bg"
+            android:clickable="true"
+            android:padding="@dimen/paddindMargins"
+            android:singleLine="false"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeLarger" />
+        <!--
+          android:padding="@dimen/txtSizeNormal" 
+          android:layout_marginEnd="@dimen/paddindMargins"
+            android:layout_marginRight="@dimen/paddindMargins"
+        -->
+
+        <TextView
+            android:id="@+id/tvDate_sendmessage_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="@dimen/paddindMargins"
+            android:singleLine="true"
+            android:text="Left"
+            android:textColor="@color/textColorGrey"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeNormal" />
+
+
+        <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/imageleft"-->
+            <!--android:layout_width="@dimen/dimenImageLayoutUserRegistartion"-->
+            <!--android:layout_height="@dimen/dimenImageLayoutUserRegistartion"-->
+            <!--android:src="@drawable/user"-->
+            <!--android:background="@drawable/button_bg_greyed_out"/>-->
+
+        <!--
+              android:layout_marginLeft="@dimen/paddindMargins"
+            android:layout_marginRight="@dimen/paddindMargins"
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSendmessage_row_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/paddindMargins"
+        android:paddingLeft="@dimen/paddingButtons"
+        android:paddingRight="@dimen/paddindMargins"
+        android:paddingStart="@dimen/paddingButtons"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tvMsg_sendmessage_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:autoLink="web"
+            android:background="@drawable/chat_bg2"
+            android:clickable="true"
+            android:padding="@dimen/paddingButtons"
+            android:text="Right"
+            android:singleLine="false"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeLarger"
+            android:textStyle="normal" />
+        <!--
+             android:layout_marginLeft="@dimen/paddindMargins"
+            android:layout_marginStart="@dimen/paddindMargins"
+        -->
+
+        <TextView
+            android:id="@+id/tvDate_sendmessage_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/paddindMargins"
+            android:singleLine="true"
+            android:textColor="@color/textColorGrey"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeNormal" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageright"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="@dimen/dimenImageLayoutUserRegistartion"-->
+            <!--android:layout_height="@dimen/dimenImageLayoutUserRegistartion"-->
+            <!--android:src="@drawable/user"-->
+            <!--android:background="@drawable/button_bg_greyed_out"/>-->
+
+
+        <!--
+              android:layout_marginEnd="@dimen/paddindMargins"
+            android:layout_marginRight="@dimen/paddindMargins"
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

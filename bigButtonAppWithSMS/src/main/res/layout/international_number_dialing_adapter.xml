@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="@dimen/paddingButtons"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rowHeightInternationalNumberDial"
+        android:layout_weight=".45"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:singleLine="false"
+            android:textColor="#000"
+            android:textSize="@dimen/txtSizeNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rowHeightInternationalNumberDial"
+        android:layout_weight=".30"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvEmergencyNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="@dimen/txtSizeNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rowHeightInternationalNumberDial"
+        android:layout_weight=".25"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/btnDialNow"
+            android:layout_width="@dimen/dimenCallIntlEmergency"
+            android:layout_height="@dimen/dimenCallIntlEmergency"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/add_btn"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

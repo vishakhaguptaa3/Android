@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtPassCode"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stripHeight"
+            android:background="@color/stripDarkBlueColor" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/paddindMargins" >
+
+            <LinearLayout
+                android:id="@+id/llContents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvPasscode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_Fields"
+                    android:gravity="center"
+                    android:text="@string/txt_pass_code_text"
+                    android:textColor="@color/darkGreyColor"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etPassCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditText"
+                    android:layout_marginTop="@dimen/padding_marginEditText"
+                    android:background="@drawable/edittext_bg_name"
+                    android:gravity="center"
+                    android:hint="Enter Passcode"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:paddingEnd="@dimen/padding_marginEditText"
+                    android:paddingLeft="@dimen/padding_marginEditText"
+                    android:paddingRight="@dimen/padding_marginEditText"
+                    android:paddingStart="@dimen/padding_marginEditText"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <Button
+                    android:id="@+id/btnVerifyPassCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/margin_Top"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtVerify"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/paddindMargins" >
+        -->
+        <!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/txtRegistration"
+                android:textColor="@color/txtColorClickOnImge"
+                android:textSize="@dimen/txtSizeMedium" 
+                android:visibility="gone"/>
+        -->
+
+
+        <!--
+            <FrameLayout
+                android:layout_width="@dimen/dimenImageLayoutUserRegistartion"
+                android:layout_height="@dimen/dimenImageLayoutUserRegistartion"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTopImageContent"
+                android:background="@drawable/edittext_bg_name" >
+
+                <TextView
+                    android:id="@+id/tvAddPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/textGreyColorChooseConatct"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <ImageView
+                    android:id="@+id/imViewUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+        -->
+
+
+        <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/chkBoxDefaultImage"
+                    android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                    android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/txtDefaultImage"
+                    android:textColor="@color/textBlueColor"
+                    android:textSize="@dimen/txtSizeSmall" />
+            </LinearLayout>
+        -->
+
+
+        <!--
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtName"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etContactName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="text"
+                android:maxLength="15"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+        -->
+
+
+        <!--
+            <TextView
+                android:id="@+id/tvContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtTelephoneNumber"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <TextView
+                android:id="@+id/tvEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtEmailId"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+        -->
+
+
+        <!-- </LinearLayout> -->
+
+    </ScrollView>
+
+</LinearLayout>

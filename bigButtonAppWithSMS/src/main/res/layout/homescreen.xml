@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0" />
+                <!-- @+android:id/realtabcontent -->
+
+                <FrameLayout
+                    android:id="@+id/realtabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginTopContents"
+        android:layout_marginRight="@dimen/marginTopContents"
+        android:layout_marginTop="@dimen/marginTopContents" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btnNotification"
+                android:layout_width="@dimen/dimensButtons"
+                android:layout_height="@dimen/dimensButtons"
+                android:background="@drawable/msg" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imViewCall"
+                android:layout_width="@dimen/dimensCallMessage"
+                android:layout_height="@dimen/dimensCallMessage"
+                android:background="@drawable/call"
+                android:contentDescription="@string/image" />
+
+            <ToggleButton
+                android:id="@+id/toggleCallMessage"
+                style="@style/toggleButton"
+                android:layout_width="@dimen/widthToggle"
+                android:layout_height="@dimen/heightToggle"
+                android:background="@drawable/ic_toggle_bg"
+                android:checked="false" />
+
+            <ImageView
+                android:id="@+id/imViewMessage"
+                android:layout_width="@dimen/dimensCallMessage"
+                android:layout_height="@dimen/dimensCallMessage"
+                android:background="@drawable/msg_toggle_f"
+                android:contentDescription="@string/image" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btnAddTile"
+                android:layout_width="@dimen/dimensButtons"
+                android:layout_height="@dimen/dimensButtons"
+                android:background="@drawable/add_new" />
+        </FrameLayout>
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

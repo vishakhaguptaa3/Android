@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/paddindMargins"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/heightContactNumlayout"
+                android:layout_height="@dimen/heightContactNumlayout"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/appicon"
+                android:contentDescription="@string/image" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtBigButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:shadowColor="@color/textColorTileContact"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="0.03"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txtBigButton"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarger" />
+
+                <TextView
+                    android:id="@+id/txtTradeMarkSuperScript"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txtTradeMarkSuperScript"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:textSize="@dimen/txtSizeTiny" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtTradeMarkSuperScript"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txtSizeNormal" />-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTop_BottomLayout">
+                <TextView
+                    android:id="@+id/txtAppInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/txtAppDescription"
+                    android:textColor="#ABF2FF"
+                    android:textSize="@dimen/txtSizeMedium" />
+
+
+                <TextView
+                    android:id="@+id/txtAppInformationRegistereSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtTradeMarkSuperScript"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_toRightOf="@+id/txtAppInformation"
+                    android:layout_alignTop="@+id/txtAppInformation"
+                    android:textColor="#ABF2FF"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopText"
+                android:gravity="center_horizontal"
+                android:text="@string/txtThanksForInstallation"
+                android:textColor="@color/textColorSplash"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/txtVideoInformation"
+                android:textColor="@color/textColorSplash"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/txtVideoInformationSecond"
+                android:textColor="@color/textColorSplash"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/txtVideoDetail"
+                android:textColor="@color/textColorSplash"
+                android:textSize="@dimen/txtSizeNormal" />
+            <!-- android:layout_marginTop="@dimen/marginTop_TextVideoInformation" -->
+
+            <ImageView
+                android:id="@+id/btnClickplay"
+                android:layout_width="@dimen/BtnWidth"
+                android:layout_height="@dimen/BtnWidth"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:background="@drawable/play_icon" />
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="@dimen/widthBtnSkip"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTopSkipButton"
+                android:layout_marginBottom="@dimen/marginTopSkipButton"
+                android:background="@drawable/buttonbackground"
+                android:gravity="center"
+                android:text="@string/txtSkip"
+                android:textColor="@color/textSkipColor"
+                android:textSize="@dimen/txtSizeLarge" />
+        </LinearLayout>
+    </ScrollView>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".55" >
+
+            
+                 <VideoView
+                android:id="@+id/videoViewer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/marginTop_BottomLayout"
+                android:visibility="gone" />
+           
+
+            <Button
+                android:id="@+id/btnClickplay"
+                android:layout_width="@dimen/widthBtnPlay"
+                android:layout_height="@dimen/widthBtnPlay"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/play_icon" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".45"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtBigButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtBigButton"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarger" />
+
+                <TextView
+                    android:id="@+id/txtAppInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformation"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformationSecond"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_TextVideoInformation"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoDetail"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/marginTopSkipButton"
+                    android:background="@drawable/buttonbackground"
+                    android:gravity="center"
+                    android:text="@string/txtSkip"
+                    android:textColor="@color/textSkipColor"
+                    android:textSize="@dimen/txtSizeLarge" />
+                    android:layout_marginTop="@dimen/marginTop_BottomLayout"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtAppDescription"
+                    android:textColor="#ABF2FF"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformation"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformationSecond"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_TextVideoInformation"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoDetail"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <Button <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformation"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformationSecond"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_TextVideoInformation"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoDetail"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/marginTopSkipButton"
+                    android:background="@drawable/buttonbackground"
+                    android:gravity="center"
+                    android:text="@string/txtSkip"
+                    android:textColor="@color/textSkipColor"
+                    android:textSize="@dimen/txtSizeLarge" /> <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformation"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformationSecond"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_TextVideoInformation"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoDetail"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/marginTopSkipButton"
+                    android:background="@drawable/buttonbackground"
+                    android:gravity="center"
+                    android:text="@string/txtSkip"
+                    android:textColor="@color/textSkipColor"
+                    android:textSize="@dimen/txtSizeLarge" /> <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformation"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoInformationSecond"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_TextVideoInformation"
+                    android:gravity="center_horizontal"
+                    android:text="@string/txtVideoDetail"
+                    android:textColor="@color/textColorSplash"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/marginTopSkipButton"
+                    android:background="@drawable/buttonbackground"
+                    android:gravity="center"
+                    android:text="@string/txtSkip"
+                    android:textColor="@color/textSkipColor"
+                    android:textSize="@dimen/txtSizeLarge" />
+                    android:id="@+id/btnSkip"
+                    android:layout_width="@dimen/widthBtnSkip"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/marginTopSkipButton"
+                    android:background="@drawable/buttonbackground"
+                    android:gravity="center"
+                    android:text="@string/txtSkip"
+                    android:textColor="@color/textSkipColor"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    -->
+
+</FrameLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/paddindMargins"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/svContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                android:layout_marginRight="@dimen/margin_LeftRightTop"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimenImageLayoutContacDetails"
+                    android:layout_height="@dimen/dimenImageLayoutContacDetails"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/img_back"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imViewUserImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/paddingButtons"
+                        android:contentDescription="@string/image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/no_image" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvContactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/paddindMargins"
+                    android:gravity="center"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/stripDarkBlueColor"
+                    android:textSize="@dimen/txtSizeLarger"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvContactNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/paddindMargins"
+                    android:text="@string/txtContactPhones"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <ListView
+                    android:id="@+id/lvNumbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightListViewPhoneNumbers"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/borderEditText"
+                    android:dividerHeight="@dimen/viewHeight"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/tvContactEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/margin_Top"
+                    android:text="@string/txtContactEmail"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditText"
+                    android:layout_marginLeft="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/padding_marginEditText"
+                    android:background="@drawable/edittext_bg_name"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/widthEmailIconContactDetails"
+                        android:layout_height="@dimen/heightEmailIconContactDetails"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/paddindMargins"
+                        android:background="@drawable/email_user"
+                        android:contentDescription="@string/image" />
+
+                    <EditText
+                        android:id="@+id/etContactEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/paddingButtons"
+                        android:layout_marginRight="@dimen/paddingButtons"
+                        android:background="#00000000"
+                        android:gravity="left|center_vertical"
+                        android:inputType="text"
+                        android:hint="@string/txtEmailId_mandatory"
+                        android:singleLine="true"
+                        android:textColor="@color/stripDarkBlueColor"
+                        android:textSize="@dimen/txtSizeLarge" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddindMargins"
+                    android:layout_marginTop="@dimen/paddindMargins"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnPlaceCall"
+                        android:layout_width="@dimen/dimensButtons"
+                        android:layout_height="@dimen/dimensButtons"
+                        android:background="@drawable/call_user"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/btnCreateButton"
+                        android:layout_width="@dimen/dimensButtons"
+                        android:layout_height="@dimen/dimensButtons"
+                        android:layout_marginLeft="@dimen/margin_Top"
+                        android:background="@drawable/create_button"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/btnInvite"
+                        android:layout_width="@dimen/dimensButtons"
+                        android:layout_height="@dimen/dimensButtons"
+                        android:layout_marginLeft="@dimen/margin_Top"
+                        android:background="@drawable/invite_user"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

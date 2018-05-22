@@ -1,0 +1,122 @@
+package com.tnc.webresponse;
+
+import java.util.ArrayList;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+import com.tnc.bean.NotificationReponseDataBean;
+import com.tnc.bean.Timer;
+
+public class NotificationResponse
+{
+
+	@SerializedName("response_code")
+	public String response_code;
+
+	@SerializedName("response_message")
+	public String response_message;
+
+	@SerializedName("public_key")
+	public String public_key;
+
+	/*@SerializedName("total_count")
+	public String total_count;
+
+	@SerializedName("start_index")
+	public String start_index;
+
+	@SerializedName("page_size")
+	public String page_size;
+*/
+	@SerializedName("data")
+	public ArrayList<NotificationReponseDataBean> getData;
+
+	@SerializedName("timer")
+	private Timer timer;
+
+	/*@SerializedName("version")
+	public VersionBean version;*/
+
+	public ArrayList<NotificationReponseDataBean> getData()
+	{
+		return getData;
+	}
+
+	/**
+	 * @return the response_code
+	 */
+	public String getResponse_code() {
+		return response_code;
+	}
+
+	/**
+	 * @param response_code the response_code to set
+	 */
+	public void setResponse_code(String response_code) {
+		this.response_code = response_code;
+	}
+
+	/**
+	 * @return the response_message
+	 */
+	public String getResponse_message() {
+		return response_message;
+	}
+
+	/**
+	 * @param response_message the response_message to set
+	 */
+	public void setResponse_message(String response_message) {
+		this.response_message = response_message;
+	}
+
+	/**
+	 * @return the public_key
+	 */
+	public String getPublic_key() {
+		return public_key;
+	}
+
+	/**
+	 * @param public_key the public_key to set
+	 */
+	public void setPublic_key(String public_key) {
+		this.public_key = public_key;
+	}
+
+	/**
+	 * @return the getData
+	 */
+	public ArrayList<NotificationReponseDataBean> getGetData() {
+		return getData;
+	}
+
+	/**
+	 * @param getData the getData to set
+	 */
+	public void setGetData(ArrayList<NotificationReponseDataBean> getData) {
+		this.getData = getData;
+	}
+
+	/**
+	 * @return the version
+	 */
+	/*public VersionBean getVersion() {
+		return version;
+	}
+
+	*//**
+	 *  the version to set
+	 *//*
+	public void setVersion(VersionBean version) {
+		this.version = version;
+	}*/
+
+	public Timer getTimer() {
+		return timer;
+	}
+
+	public void setTimer(Timer timer) {
+		this.timer = timer;
+	}
+}

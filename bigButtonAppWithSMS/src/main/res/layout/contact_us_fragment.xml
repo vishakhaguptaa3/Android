@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/llTopHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtContactUs"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textSize="@dimen/txtSizeLarger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".65"
+            android:background="@color/stripDarkBlueColor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".35"
+            android:background="@color/topBarColor" />
+    </LinearLayout>
+
+    <WebView 
+        android:id="@+id/wvContactUsForm"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    
+    <ScrollView
+        android:id="@+id/svContactUsForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/widthImage"
+                android:layout_height="@dimen/heightImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:background="@drawable/appicon"
+                android:contentDescription="@string/image" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textBlueColor"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                android:layout_marginRight="@dimen/margin_LeftRightTop"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:gravity="left|center_vertical"
+                android:text="@string/txtMessage"
+                android:textColor="#222222"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                android:layout_marginRight="@dimen/margin_LeftRightTop"
+                android:background="@drawable/edittext_bg_name"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/paddingButtons"
+                android:scrollbars="none"
+                android:textCursorDrawable="@drawable/black_cursor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                android:layout_marginRight="@dimen/margin_LeftRightTop"
+                android:layout_marginTop="@dimen/paddingButtons"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnAddAttachment"
+                    android:layout_width="@dimen/widthAttachmentIcon"
+                    android:layout_height="@dimen/heightAttachmentIcon"
+                    android:background="@drawable/clip" />
+
+                <TextView
+                    android:id="@+id/tvAttachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                    android:text="@string/txtAddAttachment"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnSendMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                    android:layout_marginRight="@dimen/margin_LeftRightTop"
+                    android:layout_marginTop="@dimen/paddingEditTextLayout"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtSend"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <Button
+                    android:id="@+id/btnDisableOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#80ffffff"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_marginLeft="@dimen/margin_LeftRightTop"
+                android:layout_marginRight="@dimen/margin_LeftRightTop"
+                android:layout_marginTop="@dimen/paddingEditTextLayout"
+                android:layout_marginBottom="@dimen/paddingButtons"
+                android:background="@drawable/button_bg_skip"
+                android:gravity="center"
+                android:text="@string/txtCancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

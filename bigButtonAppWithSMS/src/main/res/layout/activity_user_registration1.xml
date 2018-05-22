@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:clickable="false">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLayout" >
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtCreateUserProfile"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stripHeight"
+            android:background="@color/stripDarkBlueColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.87"
+            android:fillViewport="false"
+            android:scrollbars="none" >
+
+            <!-- Changing registration Phase layout starts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+                <!-- registration 1 layout starts -->
+                <LinearLayout
+                    android:id="@+id/reg1layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/paddingLayout" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtDescription1"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtDescription2"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvContactName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtName"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                        <EditText
+                            android:id="@+id/reg1EtContactName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/heightEditText"
+                            android:layout_marginTop="@dimen/padding_marginEditText"
+                            android:background="@drawable/edittext_bg_name"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:paddingEnd="@dimen/padding_marginEditText"
+                            android:paddingLeft="@dimen/padding_marginEditText"
+                            android:paddingRight="@dimen/padding_marginEditText"
+                            android:paddingStart="@dimen/padding_marginEditText"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@drawable/black_cursor"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+
+                        <TextView
+                            android:id="@+id/reg1TvAgeGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtAgeGroup"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:weightSum="1">
+                            <LinearLayout
+                                android:id="@+id/reg1SpLayout"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/paddingButtons"
+                                android:background="@drawable/edittext_bg_name">
+                                <Spinner
+                                    android:id="@+id/reg1SpAgeGroup"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.7"
+                                    android:background="@null"
+                                    android:layout_height="@dimen/heightEditText"/>
+                                <ImageView
+                                    android:id="@+id/imgspinnerdownagegroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/arrow_down"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/reg1ImgHintAgeGroup"
+                                android:layout_weight="0.3"
+                                android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                                android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                                android:src="@drawable/ic_question_mark"/>.
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- registration 1 layout ends -->
+
+                <!-- registration 2 layout starts -->
+                <LinearLayout
+                    android:id="@+id/reg2layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/paddingLayout" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txthintPhoneNumber"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtCountry"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/reg2SpLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg_name">
+                                <Spinner
+                                    android:id="@+id/reg2SpCountryRegion"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.7"
+                                    android:background="@null"
+                                    android:layout_height="@dimen/heightEditText"/>
+                                <ImageView
+                                    android:id="@+id/reg2Imgspinnerdowncountry"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/arrow_down"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtPhoneNumber"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                        <EditText
+                            android:id="@+id/reg2EtPhoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/heightEditText"
+                            android:layout_marginTop="@dimen/padding_marginEditText"
+                            android:background="@drawable/edittext_bg_name"
+                            android:inputType="phone"
+                            android:maxLength="30"
+                            android:paddingEnd="@dimen/padding_marginEditText"
+                            android:paddingLeft="@dimen/padding_marginEditText"
+                            android:paddingRight="@dimen/padding_marginEditText"
+                            android:paddingStart="@dimen/padding_marginEditText"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@drawable/black_cursor"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtAlertPhoneNumber"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/reg2TxtReturningUser"
+                                android:layout_width="@dimen/widthcheckboxUnderAge"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/txtReturningUser"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txtSizeNormal" />
+
+                            <CheckBox
+                                android:id="@+id/reg2ChkBoxReturningUser"
+                                android:layout_toRightOf="@+id/reg2TxtReturningUser"
+                                android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                                android:layout_height="@dimen/chkBoxDimenEmergencyContact" />
+
+
+                            <ImageView
+                                android:id="@+id/reg2ImgHintReturningUser"
+                                android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                                android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                                android:src="@drawable/ic_question_mark"
+                                android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- registration 2 layout ends -->
+
+                <!-- registration 3 layout starts -->
+                <LinearLayout
+                    android:id="@+id/reg3layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/paddingLayout" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txthintUserImage"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtImageTitle"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textSize="@dimen/txtSizeNormal" />
+                        <FrameLayout
+                            android:layout_width="@dimen/dimenImageLayoutUserRegistartion"
+                            android:layout_height="@dimen/dimenImageLayoutUserRegistartion"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/marginTopImageContent"
+                            android:background="@drawable/edittext_bg_name" >
+
+                            <TextView
+                                android:id="@+id/reg3TvAddPhoto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:singleLine="false"
+                                android:textColor="@color/textGreyColorChooseConatct"
+                                android:textIsSelectable="false"
+                                android:textSize="@dimen/txtSizeNormal"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/reg3ImViewUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/image"
+                                android:scaleType="centerCrop" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/paddingLayout"
+                            android:paddingRight="@dimen/paddingLayout"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:gravity="center"
+                            android:text="Tap to change"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/reg3TxtReturningUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/txtchkdefaultimage"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txtSizeNormal" />
+
+                            <CheckBox
+                                android:id="@+id/reg3ChkBoxDefaultImg"
+                                android:layout_toRightOf="@+id/reg3TxtReturningUser"
+                                android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                                android:layout_height="@dimen/chkBoxDimenEmergencyContact" />
+
+
+                            <ImageView
+                                android:id="@+id/reg3ImgHintDefaultImg"
+                                android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                                android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                                android:src="@drawable/ic_question_mark"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- registration 3 layout ends -->
+
+                <!-- registration Phone Number Alert layout starts -->
+                <LinearLayout
+                    android:id="@+id/regPhoneNumberAlertlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/paddingLayout" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/paddindMargins">
+                        <ImageView
+                            android:layout_width="@dimen/dimenImageLayoutUserRegistartion"
+                            android:layout_height="@dimen/dimenImageLayoutUserRegistartion"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_warning_icon"
+                            android:padding="5dp"
+                            android:contentDescription="@string/image" />
+                        <TextView
+                            android:id="@+id/regPhoneNumberAlertTxt"
+                            android:layout_width="@dimen/scrollHeight"
+                            android:layout_height="@dimen/heightEditText"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:enabled="false"
+                            android:text="+1 8585253079"
+                            android:background="@drawable/edittext_bg_name"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/txtSizeMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:text="@string/txtPhoneNumberAlerttext1"
+                            android:layout_marginTop="@dimen/paddindMargins"
+                            android:textSize="@dimen/txtSizeMedium"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/paddindMargins"
+                            android:textColor="@android:color/black"
+                            android:text="@string/txtPhoneNumberAlerttext2"
+                            android:textSize="@dimen/txtSizeSmall"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/paddindMargins"
+                            android:weightSum="1">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.1"
+                                android:layout_height="wrap_content"
+                                android:scaleType="center"
+                                android:paddingTop="10dp"
+                                android:src="@drawable/dot_circular"/>
+                            <TextView
+                                android:id="@+id/txtPhoneNumberAlerttext3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:textColor="@android:color/black"
+                                android:textAllCaps="false"
+                                android:text="@string/txtPhoneNumberAlerttext3"
+                                android:textSize="@dimen/txtSizeNormal"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:weightSum="1">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.1"
+                                android:layout_height="match_parent"
+                                android:scaleType="center"
+                                android:src="@drawable/dot_circular"/>
+                            <TextView
+                                android:id="@+id/txtPhoneNumberAlerttext4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:paddingTop="5dp"
+                                android:textColor="@android:color/black"
+                                android:textAllCaps="false"
+                                android:text="@string/txtPhoneNumberAlerttext4"
+                                android:textSize="@dimen/txtSizeNormal"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- registration Phone Number Alert layout ends -->
+
+                <!-- registration Cloud back up key Alert layout starts -->
+                <LinearLayout
+                    android:id="@+id/regAlertCloudBackUplayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/paddingLayout" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/regAlertCloudBackUptxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtProvideBackUpKeytxt1"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/paddindMargins"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_Fields"
+                            android:text="@string/txtCloudBackUpKey"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/txtSizeNormal" />
+
+                        <EditText
+                            android:id="@+id/regPhoneNumberAlertEdtCloudKey"
+                            android:layout_width="@dimen/scrollHeight"
+                            android:layout_height="@dimen/heightEditText"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_bg_name"
+                            android:singleLine="true"
+                            android:textColor="@color/textGreyColorChooseConatct"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:id="@+id/regPhoneNumberAledtphonelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/marginTop_Fields"
+                                android:text="@string/txtOldPhoneNumber"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txtSizeNormal" />
+
+                            <EditText
+                                android:id="@+id/regPhoneNumberAlertEdtPhone"
+                                android:layout_width="@dimen/scrollHeight"
+                                android:layout_height="@dimen/heightEditText"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="30dp"
+                                android:paddingRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_bg_name"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="phone"
+                                android:textColor="@color/textGreyColorChooseConatct"
+                                android:textIsSelectable="false"
+                                android:textSize="@dimen/txtSizeNormal"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/paddingLayout"
+                            android:paddingRight="@dimen/paddingLayout"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:gravity="center"
+                            android:layout_marginTop="50dp"
+                            android:text="@string/txtCloudBackUpKeyMessage"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- registration Cloud back up key Alert layout ends -->
+
+            </LinearLayout>
+            <!-- Changing registration Phase layout ends -->
+
+        </ScrollView>
+
+        <!-- next and forward buttons layout starts -->
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="0.13"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/paddingButtons"
+            android:layout_marginTop="@dimen/margin_LeftRightTop"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/btnBackRegLayout"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginLeft="@dimen/paddingLayout"
+                android:background="@drawable/button_bg_cancel_red"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/btnBackRegLayoutTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:singleLine="true"
+                    android:text="@string/txtCancel"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btnBackRegLayoutImg"
+                    android:layout_width="@dimen/btnSendWidth"
+                    android:layout_height="@dimen/heightCheckBox"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/arrow_previous"/>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="@dimen/paddingLayout"
+                android:layout_marginRight="@dimen/paddingLayout"
+                android:gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/btnForwardRegLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:background="@drawable/button_bg_yes_green"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/btnForwardRegLayoutTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:text="@string/txtCreateProfile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btnForwardRegLayoutImg"
+                    android:layout_width="@dimen/btnSendWidth"
+                    android:layout_height="@dimen/heightCheckBox"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/arrow_next"/>
+            </RelativeLayout>
+
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+        <!-- next and forward buttons layout ends -->
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlGridContent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" > <!-- @android:color/transparent -->
+
+    <LinearLayout
+        android:id="@+id/llImageHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/flImageHolder"
+            android:layout_width="@dimen/tileImageDimensionheight"
+            android:layout_height="@dimen/tileImageDimensionheight"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img_back"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imViewUserImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_image" />
+
+            <com.tnc.utility.RoundedImageViewCircular
+                android:id="@+id/imViewContactImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/llViewBorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/rectangular_boundary_blue"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imViewTag"
+                android:layout_width="@dimen/tagWidth"
+                android:layout_height="@dimen/tagHeight"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/tag"
+                android:contentDescription="@string/image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imViewEmergency"
+                android:layout_width="@dimen/emergencyIcon"
+                android:layout_height="@dimen/emergencyIcon"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/emergency_icon"
+                android:contentDescription="@string/image"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvImagePending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeSmall" />
+
+            <TextView
+                android:id="@+id/tvUnreadMessageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/point"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txtSizeSmall"
+                android:visibility="gone" />
+            <!--
+                  android:layout_marginEnd="@dimen/tab_notification_marginRightEnd"
+                android:layout_marginRight="@dimen/tab_notification_marginRightEnd"
+            -->
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llImageHolder"
+        android:layout_alignLeft="@+id/llImageHolder"
+        android:layout_alignRight="@+id/llImageHolder"
+        android:gravity="center"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/borderStrokeWidthLeft_Right"
+        android:paddingLeft="@dimen/borderStrokeWidthLeft_Right"
+        android:paddingRight="@dimen/borderStrokeWidthLeft_Right"
+        android:paddingStart="@dimen/borderStrokeWidthLeft_Right"
+        android:singleLine="false"
+        android:textColor="@color/darkGreyColor"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeNormal"
+        android:textStyle="bold" />
+
+</RelativeLayout>

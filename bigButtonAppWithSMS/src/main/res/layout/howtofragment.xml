@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/llTopHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvhowTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtHowToTitle"
+            android:textColor="@color/stripDarkBlueColor"
+            android:textSize="@dimen/txtSizeLarger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".65"
+            android:background="@color/stripDarkBlueColor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".35"
+            android:background="@color/stripLightBlueColor" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvhowTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/llTopHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtStep"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarger" />
+
+        <TextView
+            android:id="@+id/tvChooseContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtChooseContact"
+            android:textColor="@color/textGreyColorChooseConatct"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".35"
+            android:background="@color/stripDarkBlueColor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight=".65"
+            android:background="@color/stripLightBlueColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/paddindMargins"
+        android:layout_marginRight="@dimen/paddindMargins"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/llFavorites"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="33"
+            android:background="@drawable/bg_button_choosecontact"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:background="@drawable/bg_text_choosecontact"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvFromFavorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFrom"
+                    android:textColor="@color/textColorFrom"
+                    android:textSize="@dimen/txtSizeLarger" />
+
+                <TextView
+                    android:id="@+id/tvFavoritesList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFavoritesList"
+                    android:textColor="@color/textColorFrom"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="@dimen/iconHeight"
+                    android:layout_height="@dimen/iconHeight"
+                    android:background="@drawable/star"
+                    android:contentDescription="@string/image" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContacts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/paddindMargins"
+            android:layout_weight="33"
+            android:background="@drawable/bg_button_choosecontact"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:background="@drawable/bg_text_choosecontact"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvFromContacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFrom"
+                    android:textColor="@color/textColorFrom"
+                    android:textSize="@dimen/txtSizeLarger" />
+
+                <TextView
+                    android:id="@+id/tvContactList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtContactList"
+                    android:textColor="@color/textColorFrom"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="@dimen/iconHeight"
+                    android:layout_height="@dimen/iconHeight"
+                    android:background="@drawable/contactlist"
+                    android:contentDescription="@string/image" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCreate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/paddindMargins"
+            android:layout_weight="33"
+            android:background="@drawable/bg_button_choosecontact"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:background="@drawable/bg_text_choosecontact"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCreate"
+                    android:textColor="@color/textColorFrom"
+                    android:textSize="@dimen/txtSizeLarger" />
+
+                <TextView
+                    android:id="@+id/tvNewContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtNewContact"
+                    android:textColor="@color/textColorFrom"
+                    android:textSize="@dimen/txtSizeLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="@dimen/iconHeight"
+                    android:layout_height="@dimen/iconHeight"
+                    android:background="@drawable/createcontact"
+                    android:contentDescription="@string/image" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

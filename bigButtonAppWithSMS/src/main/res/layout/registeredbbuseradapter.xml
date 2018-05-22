@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imViewTag"
+        android:layout_width="@dimen/tagWidth"
+        android:layout_height="@dimen/tagHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tag"
+        android:contentDescription="@string/image"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llContactNameParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:layout_marginEnd="@dimen/paddingRightAdapter"
+        android:layout_marginLeft="@dimen/paddingLeftAdapter"
+        android:layout_marginRight="@dimen/paddingRightAdapter"
+        android:layout_marginStart="@dimen/paddingLeftAdapter"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <FrameLayout
+            android:id="@+id/llImageHolderparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/llContactNameHolder"
+                android:layout_width="@dimen/dimenuserImageChat"
+                android:layout_height="@dimen/dimenuserImageChat"
+                android:background="@drawable/messagelist_border_grey"
+                android:gravity="center"
+                android:padding="@dimen/imageBorderWidth" >
+
+                <com.tnc.utility.RoundedImageViewCircular
+                    android:id="@+id/imViewContactImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftName"
+            android:layout_marginStart="@dimen/marginLeftName"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/textGreyColorChooseConatct"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txtSizeLarge" />
+        <!-- android:textColor="@drawable/listitem_textcolor_selector" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llArrowHolder"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".15"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imViewArrow"
+            android:layout_width="@dimen/arrowWidth"
+            android:layout_height="@dimen/arrowHeight"
+            android:background="@drawable/button_selector_arrow"
+            android:contentDescription="@string/image" />
+
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:layout_marginEnd="@dimen/paddingRightAdapter"
+        android:layout_marginLeft="@dimen/paddingLeftAdapter"
+        android:layout_marginRight="@dimen/paddingRightAdapter"
+        android:layout_marginStart="@dimen/paddingLeftAdapter"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@drawable/listitem_textcolor_selector"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/txtSizeLarge" />
+
+        <ImageView
+            android:id="@+id/imViewArrow"
+            android:layout_width="@dimen/arrowWidth"
+            android:layout_height="@dimen/arrowHeight"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_selector_arrow"
+            android:contentDescription="@string/image" />
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

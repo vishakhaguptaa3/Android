@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtCreateUserProfile"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stripHeight"
+            android:background="@color/stripDarkBlueColor" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/paddindMargins" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:visibility="gone"
+                android:text="@string/txtRegistration"
+                android:textColor="@color/darkGreyColor"
+                android:textSize="@dimen/txtSizeMedium" />
+
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="@dimen/dimenImageLayoutUserRegistartion"
+                android:layout_height="@dimen/dimenImageLayoutUserRegistartion"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTopImageContent"
+                android:background="@drawable/edittext_bg_name" >
+
+                <TextView
+                    android:id="@+id/tvAddPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/textGreyColorChooseConatct"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imViewUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/chkBoxDefaultImage"
+                    android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                    android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/txtDefaultImage"
+                    android:textColor="@color/textBlueColor"
+                    android:textSize="@dimen/txtSizeMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtName"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etContactName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <TextView
+                android:id="@+id/tvCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtCountry"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <!--
+                 <Spinner
+                android:id="@+id/spCountryRegion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:background="@drawable/edittext_bg_name"/>
+            -->
+
+            <Button
+                android:id="@+id/btnCountryRegion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:gravity="left|center_vertical"
+                android:textColor="@android:color/black"
+                android:paddingLeft="@dimen/paddingButtons"
+                android:textSize="@dimen/txtSizeMedium" />
+
+            <LinearLayout
+                android:id="@+id/llCheckBoxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/widthcheckboxUnderAge"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/txtUnderAgeMessage"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeMedium" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxUnderAge"
+                    android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                    android:layout_height="@dimen/chkBoxDimenEmergencyContact" />
+                <!-- android:button="@null"
+                android:background="@drawable/checkbox_selector" -->
+
+                <Button
+                    android:id="@+id/btnParentalConsentStatus"
+                    android:layout_width="@dimen/chkBoxHeight"
+                    android:layout_height="@dimen/chkBoxHeight"
+                    android:layout_marginLeft="@dimen/paddindPopUps"
+                    android:background="#00000000" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/paddingButtons" >
+
+                <TextView
+                    android:layout_width="@dimen/widthcheckboxUnderAge"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/txtReturningUser"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeMedium" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxReturningUser"
+                    android:layout_width="@dimen/chkBoxDimenEmergencyContact"
+                    android:layout_height="@dimen/chkBoxDimenEmergencyContact"
+                     />
+
+                <!-- android:button="@null"
+                android:background="@drawable/checkbox_selector" -->
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtEmailId"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <TextView
+                android:id="@+id/tvGroupCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_Fields"
+                android:text="@string/txtGroupCode"
+                android:visibility="gone"
+                android:textColor="@color/textGreyColorChooseConatct"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <EditText
+                android:id="@+id/etGroupCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_marginTop="@dimen/padding_marginEditText"
+                android:background="@drawable/edittext_bg_name"
+                android:inputType="text"
+                android:maxLength="10"
+                android:paddingEnd="@dimen/padding_marginEditText"
+                android:paddingLeft="@dimen/padding_marginEditText"
+                android:paddingRight="@dimen/padding_marginEditText"
+                android:paddingStart="@dimen/padding_marginEditText"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/txtSizeLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/paddingButtons"
+                android:layout_marginTop="@dimen/margin_Top"
+                android:layout_weight="2.7"
+                android:orientation="vertical" >
+
+                <!-- android:layout_marginBottom="@dimen/marginBottom_Buttons" -->
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:background="@drawable/button_bg_yes_green"
+                    android:gravity="center"
+                    android:text="@string/txtRegisterNowCaps"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightBtnSkip"
+                    android:layout_marginTop="@dimen/paddingButtons"
+                    android:background="@drawable/button_bg_skip"
+                    android:gravity="center"
+                    android:text="@string/txtRegisterLaterCaps"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+           <!-- <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightBtnSkip"
+                android:layout_marginTop="@dimen/margin_Top"
+                android:background="@drawable/button_bg_skip"
+                android:gravity="center"
+                android:text="@string/txtRegister"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge" />-->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

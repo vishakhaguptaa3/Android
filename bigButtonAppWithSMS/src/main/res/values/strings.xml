@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">Tap-n-Chat</string> -->
+    <!-- Big Button -->
+    <string name="app_name">Chatstasy-Free</string>
+    <string name="app_name_free">Chatstasy-Free</string>
+    <string name="action_settings">Settings</string>
+    <!-- <string name="txtBigButton">Tap-n-Chat</string> -->
+    <!-- BIG BUTTON -->
+    <string name="txtBigButton">Chatstasy</string>
+    <string name="txtBigButton_Chatstasy">Chatstasy</string>
+    <string name="txtBigButton_Free">-Free</string>
+    <!--<string name="txtTradeMarkSuperScript">™</string>-->
+    <!-- ® -->
+    <string name="txtTradeMarkSuperScript">&#174;</string>
+    <string name="txtBigButtonPronounciation">(chats-tasi)</string>
+    <string name="txtAppDescription">A Smart Way to Chat on a Smartphone</string> <!-- Simple mobile chat and nodes -->
+    <!-- <string name="txtCopyRight">© Copyright 2017 TAP-N-CHAT LLC</string> -->
+    <string name="txtCopyRight">© Copyright 2018, Chatstasy, LLC</string>
+    <string name="image">Image</string>
+    <!-- <string name="txtThanksForInstallation">Thank you for installing Tap-n-Chat.</string> -->
+    <string name="txtThanksForInstallation">Thank you for installing Chatstasy.</string>
+    <string name="txtVideoInformation">The following video will provide an overview</string>
+    <string name="txtVideoInformationSecond">of this App.</string>
+    <string name="txtVideoDetail">It is about 4 min long.</string>
+    <string name="txtVideoPopupMessage">You can play it later from Info/FAQ.</string>
+    <string name="txtEasySteps">3 EASY STEPS...</string>
+    <string name="no_internet_abvailable">Network connectivity not available</string>
+    <string name="txtCreateCall">CREATE CHAT BUTTON</string>
+    <string name="txtCreateChatButton">Create Chat Button</string>
+    <string name="txtNotifyOtherUsersTitle">NOTIFY OTHER USERS</string>
+    <string name="txtSkip">SKIP</string>
+    <string name="txtStep">STEP 1</string>
+    <string name="txtStep2">STEP 2</string>
+    <string name="txtChooseContact">Choose Contact</string>
+    <string name="txtFrom">FROM</string>
+    <string name="txtFavoritesList">FAVORITES LIST</string>
+    <string name="txtContactList">CONTACT LIST</string>
+    <string name="txtCreate">CREATE</string>
+    <string name="txtNewContact">A NEW CONTACT</string>
+    <string name="txtYes">Yes</string>
+    <string name="txtNo">No</string>
+    <string name="txtYesCap">YES</string>
+    <!--<string name="txtRegisterNowCaps">REGISTER NOW</string>
+    <string name="txtRegisterLaterCaps">REGISTER LATER</string>-->
+    <string name="txtRegisterNowCaps">CREATE PROFILE</string>
+    <string name="txtRegisterLaterCaps">CREATE LATER</string>
+
+    <string name="txtOk">OK</string>
+    <string name="txtCancel">Cancel</string>
+    <string name="txtCreateContact">Create Contact</string>
+    <string name="txtContactName">Contact Name</string>
+    <string name="txtContactPhone">Contact Phone</string>
+    <string name="txtCountryCode">Country Code</string>
+    <string name="txtClickName">Click on name to change</string>
+    <string name="txtNext">NEXT</string>
+    <string name="private_key">93f67a51c4106072fe7548189b5f4a79</string>
+    <string name="improper_response">Network issue please try after sometime</string>
+    <string name="improper_response_network">Network issue please try after sometime</string>
+    <string name="txtChooseImage">Choose Button Image</string>
+    <string name="txtPreviousPhone">PREVIOUS PHONE DETAILS</string>
+    <string name="txtGoBack">GO BACK</string>
+    <string name="txtFinish">FINISH</string>
+    <string name="txtUserRegistration">USER REGISTRATION</string>
+    <string name="txtCreateUserProfile">USER PROFILE</string>
+    <string name="txtAddPhoto">Add \nPhoto</string>
+    <string name="txtUseAsDefaultImageRegistartion">Use this as my default image</string>
+    <string name="txtRegistration">Please fill all below fields for Registration</string>
+    <string name="txtName">Name</string>
+    <string name="txtTelephoneNumber">Telephone Number</string>
+    <string name="txtEmailId">E-mail Id (Optional)</string>
+    <string name="txtGroupCode">Group/Promo Code(optional)</string>
+    <string name="txtEmailId_mandatory">E-mail ID</string>
+    <string name="txtRegister">REGISTER</string>
+    <!-- <string name="txtRegistrationFeatureTitle">Register your App to enable premium features</string> -->
+    <!-- Registration Features Description -->
+    <string name="txtRegistrationFeatureTitle">Please Register Your App to Enable Following Features</string>
+    <string name="txtRegisterBenefitFirst">Send and receive text messages with other App users around the world! No additional carrier charges!</string>
+    <string name="txtRegisterBenefitSecond">Share chat buttons with other users</string>
+    <string name="txtRegisterBenefitThird">Place an emergency call to another App user</string>
+    <string name="txtRegisterBenefitFourth">Create custom messages\n... and much more.</string>
+    <string name="txtRegistrationVideoPopup">Would you like to see a short video on how to register?</string>
+
+    <!-- Premium Version Description -->
+    <string name="txtPremiumFeatureTitle">Purchase Premium Version</string>
+    <string name="txtRegisterBenefitFirstPremiumFeature">Restore your backups anytime</string>
+    <string name="txtRegisterBenefitSecondPremiumFeature">Notify contacts of phone number changes</string>
+    <string name="txtRegisterBenefitThirdPremiumFeature">Auto update phone number changes</string>
+    <!--<string name="txtRegisterBenefitFourthPremiumFeature">All future premium features</string>-->
+    <string name="txtRegisterBenefitFourthPremiumFeature">and many more future premium features</string>
+    <string name="txtUpgradeNowMessage">DON\'T WAIT.. UPGRADE NOW AND SAVE BIG!</string>
+    <string name="txtRegisterPremiumNowCaps">PURCHASE NOW</string>
+    <string name="txtRegisterPremiumLaterCaps">PURCHASE LATER</string>
+
+    <!-- <string name="txtRegisterBenefitFourth">Backup &amp; Restore your chat buttons on the cloud... and much more!</string> -->
+    <!-- <string name="txtRegisterBenefitFifth">ALL FOR $3.99/YR</string> -->
+    <string name="txtRegisterBenefitFifth">$4.99</string>
+    <string name="txtWouldYouLikeToRegister">Limited Time Early Adopter\nLife-Time License!</string>
+    <string name="txtgallery">GALLERY</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="txtImageRequested">IMAGE PENDING</string>
+    <string name="txtSettings">SETTINGS</string>
+    <string name="txtNotification">NOTIFICATION</string>
+    <string name="txtCloudBackupMenu">CLOUD BACKUP</string>
+    <string name="txtConfigureMessages">CONFIGURE MESSAGES</string>
+    <string name="txtElderlyModeTitle">ELDERLY MODE</string>
+    <string name="txtToggleInitiation">Initiation</string>
+    <string name="txtToggleResposne">Response</string>
+    <string name="txtBoth">Both</string>
+    <string name="txtSubmit">SUBMIT</string>
+    <string name="txtBackupKey">Backup key</string>
+    <string name="txtreply">Replay</string>
+    <string name="txtEmergencyContact">Emergency Contact</string>
+    <string name="txtLockImage">Lock Button Image</string>
+    <string name="txtDefaultImage">Use this as my default image</string>
+    <string name="txtReturningUser">Returning User</string>
+    <string name="txtInbox">Inbox</string>
+    <string name="txtCompose">Compose</string>
+    <string name="txtNoMesageFound">No Mesage Found</string>
+    <string name="txtNew">New</string>
+    <string name="txtHintChat">Type message...</string>
+    <string name="txtSend">Send</string>
+    <string name="txtDelete">Delete</string>
+    <string name="txtComposeMessage">COMPOSE MESSAGE</string>
+    <string name="txtPleaseTypeMessage">Please Type Your Mesage</string>
+    <string name="txtPleaseTypeCategoryName">Please Type Your Category Name</string>
+    <string name="txtSaveMessage">SAVE MESSAGE</string>
+    <string name="txtSaveCategory">SAVE CATEGORY</string>
+    <string name="txtInitiation">Initiation</string>
+    <string name="txtResponse">Response</string>
+    <string name="txtSystemConfigMessage">System Default Messages</string>
+    <string name="txtUserConfigMessage">Custom User Messages</string>
+    <string name="txtNotificationCount">12</string>
+    <string name="txtShow">Show</string>
+    <string name="txtTo">To:</string>
+    <string name="txtMessage">Message:</string>
+    <string name="txtPassCode">PASSCODE</string>
+    <string name="txtVerify">Verify</string>
+    <string name="txt_pass_code_text">Enter Passcode:</string>
+    <string name="txtCountry">Country</string>
+    <string name="txtAgeGroup">Age Group</string>
+    <!--<string name="txtVerifyingRegistration">Verifying Your Registration</string>-->
+    <string name="txtVerifyingRegistration">Checking User Database</string>
+    <string name="txtRetry">Retry</string>
+    <string name="txt_Skip">Skip</string>
+    <string name="txtReplace">Replace</string>
+    <string name="txtMerge">Merge</string>
+    <string name="txtEditButton">Edit Button</string>
+    <string name="txtSave">SAVE</string>
+    <string name="txtIsdCode">International access codes</string>
+    <string name="txtEmergencyNumber">Emergency Number</string>
+    <string name="txtDialPad">DIALPAD</string>
+    <string name="txtAccept">Accept</string>
+    <string name="txtUserInfo">USER PROFILE INFO</string>
+    <string name="txtUpdate">UPDATE</string>
+    <string name="txtUpdateSmall">Update</string>
+    <string name="txtChangNumber"><u>Change My Number</u></string>
+    <string name="txtNotifyContacts"><u>Notify Contacts</u></string>
+    <string name="txtInfo">INFO</string>
+    <string name="txtHowToTitle">HOW TO</string>
+    <string name="txtFaq">FAQ</string>
+    <string name="txtContactDetails">CONTACT DETAILS</string>
+    <string name="txtInternationalEmerNumber">INTERNATIONAL EMERGENCY NUMBERS</string>
+    <string name="txtContactUs">CONTACT US</string>
+    <string name="txtPrivacyPolicy">PRIVACY POLICY</string>
+    <string name="txtAddAttachment">Add Attachment</string>
+    <string name="txtPhoneNumber">Phone Number</string>
+    <string name="txtContactPhones">Contact Phones</string>
+    <string name="txtContactEmail">Email ID</string>
+    <string name="txtPlaceCall">Place a Call</string>
+    <string name="txtCreateButton">Create a Button</string>
+    <!-- <string name="txtInviteToTnC">Invite to Tap-n-Chat</string> -->
+    <string name="txtInviteToTnC">Invite to Chatstasy</string>
+    <string name="txtChangeButton">Change Contact Button</string>
+
+    <!-- HomeScreenTabs -->
+
+    <string name="tabnameHome">HOME</string>
+    <string name="tabnameSettings">SETTINGS</string>
+    <string name="tabnameContacts">CONTACTS</string>
+    <string name="tabnameCalls">CALLS</string>
+    <string name="tabnameMessages">MESSAGES</string>
+    <string name="tabnameInfo">INFO</string>
+    <string name="txtDeleteCaps">DELETE</string>
+    <string name="txtMobileNumber">Mobile Number</string>
+    <string name="txtDialingPrefix">Dialing Prefix</string>
+    <string name="txtChooseFromGallery">Choose From Gallery</string>
+    <string name="txtTakeNewPhoto">Take New Photo</string>
+    <string name="txtRequestFromContact">Request From Contact</string>
+    <string name="txtClipArt">Clip Art</string>
+    <string name="txtSendProfileImage">Send Profile Image</string>
+    <string name="txtClipArtTitle">CLIP ART</string>
+    <string name="txtChooseButtonImageFromClipart">Choose Button Image from Clip Art</string>
+    <string name="txtImageSentSuccessfullytothecontact">A request has been sent\nsuccessfully to the contact</string>
+    <string name="txtAll">All</string>
+
+    <!-- INFO -->
+    <string name="txtHowto">How to...</string>
+    <string name="txtRateTheApp">Rate  the App</string>
+    <string name="txtIntlEmerNumbers">International Emergency Numbers</string>
+    <string name="txtShareOnSocialMedia">Share on Social Media</string>
+    <string name="txtPrivacyPolicyCamelCase">Privacy Policy</string>
+    <string name="txtTermsOfUseCamelCase">Terms Of Use</string>
+    <string name="tctContctUs">Contact Us</string>
+    <string name="txtIntEmetNumbersCaps">INTERNATIONAL EMERGENCY NUMBERS</string>
+    <string name="txtDialNow">Dial Now</string>
+    <!-- <string name="txtSearchCountryCountry">Search from Country list...</string> -->
+    <string name="txtShareonSocialMedia">Share on Social Media</string>
+    <string name="txtFacebook">Facebook</string>
+    <string name="txtTwitter">Twitter</string>
+    <string name="txtLinkedin">Linkedin</string>
+    <string name="txtTwitterKeysNotConfigured">Twitter key and secret not configured</string>
+    <!-- <string name="txtTwitterCheckOuttapnChat">Check-out the Tap-n-Chat app at tap-n-chat.com. #Tap-n-Chat</string> -->
+    <string name="txtTwitterCheckOuttapnChat">Check-out the Chatstasy app at chatstasy.com. #Chatstasy</string>
+    <!-- <string name="txtFbMessagePostTnC">I am using the Tap-n-Chat App on my smartphone. You can download a copy at tap-n-chat.com </string> -->
+    <string name="txtFbMessagePostTnC">I am using the Chatstasy App on my smartphone. You can download a copy at chatstasy.com </string>
+    <string name="txtFbShareSuccessMessage">Thank you very much for sharing on your Facebook. We really appreciate it.</string>
+    <string name="txtPostToTwitter">Posting to twitter...</string>
+    <string name="txtTwitterAlreadySharedMessage">You already shared this post on twitter.Please try again after sometime</string>
+    <string name="txtTwitterPostSuccessMessage">Thank you very much for sharing on Twitter. We really appreciate it.</string>
+    <string name="txtLinkedInAlreadyShared">You already shared this post on linkedin.Please try again after sometime</string>
+    <string name="txtLinkedInSuccesfullyShared">Thank you very much for sharing on your Linkedin. We really appreciate it.</string>
+
+    <!-- CONTACTS TAB -->
+    <string name="txtSearchCountryCountry">Search from Contact list...</string>
+    <string name="txtSelectNumber">Select number</string>
+
+    <!-- DIALPAD -->
+    <string name="txtToggle123">123</string>
+    <string name="txtToggleABC">ABC</string>
+
+    <!-- SETTINGS -->
+    <string name="txtChangeButtonSettings">Change Chat Button</string>
+    <string name="txtContactSharing">Contact Sharing</string>
+    <string name="txtConfigureMessagesSettings">Configure Messages</string>
+    <string name="txtCloudBackup">Cloud Backup</string>
+    <!--<string name="txtAppRegistration">App Registration</string>-->
+    <string name="txtAppRegistration">Create Profile</string>
+    <string name="txtPremiumUser">Premium Version</string>
+    <string name="txtUserSettings">User Settings</string>
+
+    <!-- USER SETTINGS -->
+    <string name="txtUserProfileSettings">User Profile Settings</string>
+    <string name="txtUserPrivacySettings">User Privacy Settings</string>
+    <string name="txtUserPersonalSettings">Personal Settings</string>
+    <string name="txtChatButtonCategory">Chat Button Category</string>
+    <string name="txtUserGroups">User Groups</string>
+    <string name="txtElderlyMode">Elderly Mode</string>
+    <string name="txtLocationSettings">Location Settings</string>
+    <string name="txtDialerInterface">Chatstasy Dialer Interface</string>
+    <string name="txtChatButtonShape">Chat Button Shape</string>
+    <string name="txtVoiceMailSettings">Voice Mail Settings</string>
+
+    <!-- Elderly Mode Options -->
+    <string name="txtDisableLongTop">Disable Long-Tap</string>
+    <string name="txtAutoSpeakerMode">Auto Speakerphone Mode</string>
+    <string name="txtEmergencyContactNotification">Emergency Contact Notification</string>
+    <string name="txtHomeAppMode">Home App Mode</string>
+
+    <!-- CONTACT BUTTON -->
+    <string name="txtContactButtonTitle">CONTACT  BUTTON</string>
+    <string name="txtConfigureEmergency">CONFIGURE EMERGENCY</string>
+    <string name="txtSelectWithWhomToShare">Select with whom to share</string>
+
+    <!-- Tap-n-Chat Contacts -->
+    <!-- <string name="txtTapnChatContactsTitle">Tap-n-Chat Contacts</string> -->
+    <string name="txtTapnChatContactsTitle">Chatstasy Contacts</string>
+    <!-- <string name="txtNoContactFound"></string> -->
+    <string name="txtNotify">Notify</string>
+
+    <!-- USER INFO -->
+    <string name="txtChangeMyNumber">Change My Number</string>
+
+    <string name="txtUserInfoUpdateMessage">User information updated successfully</string>
+    <string name="txtEmailUpdateMessage">If you provided a valid email ID, an email will be sent to you. This might be in your Spam folder. It is important that you open the email and click the \'verify\' link to verify your email ID.</string>
+    <string name="txtImageUpdateMessage">Do you want to notify chatstasy users for image update?</string>
+    <string name="txtNoGoogleImage">Your Google Account has no image. Please choose another account or option</string>
+    <string name="txtNoFacebookImage">Your FaceBook Account has no image. Please choose another account or option</string>
+    <!-- COMPOSE MSSAGE -->
+    <string name="txtComposeNewMesasgeTitle">COMPOSE NEW INITIATION MESSAGE</string>
+
+    <!-- CLOUD BACKUP -->
+    <string name="txtCloudbackupTitle">CLOUD BACKUP</string>
+    <string name="txtPerformManualBackup">Perform Manual Backup</string>
+    <string name="txtRecoverCloudBackup">Recover Cloud Backup</string>
+    <string name="txtRecoverCurrentBAckup">Recover Current Backup</string>
+    <string name="txtRecoverArchivalBAckup">Recover Archival Backup</string>
+
+    <!-- Recover Archival Backup -->
+    <string name="txtPleaseprovideBackupKey">Please provide backup key</string>
+    <string name="txtBackupKeyOfarchival">Backup Key of your Archival Backup</string>
+    <string name="txtEnterBackupKeyHint">Enter Backup Key</string>
+    <string name="txtTelephoneNumberOfOldDevice">Telephone Number Of Old Device</string>
+
+    <!-- Backup Listing -->
+    <string name="txtBackupsTitle">BACKUPS</string>
+    <string name="txtPleaseSelectBackup">Please select one of the available cloud backups</string>
+
+    <!-- agreement popup -->
+    <string name="txtThankYouForDownload">Thank you very much for\ndownloading the App</string>
+    <string name="txtAgreementTitle">By installing this App, you are agreeing to our Terms of Use and Privacy Policy.</string>
+    <string name="txtTermsOfUseUnderLined"><u>Terms of Use</u></string>
+    <string name="txtPrivacyPolicyUnderLined"><u>Privacy Policy</u></string>
+    <string name="txtAgeConfirmation"> I am 18 years of age or over</string>
+
+    <!-- Parental Consent -->
+    <string name="txtParentalConsent">Parental Consent</string>
+    <!--
+<string name="txtParentalConsentInformation">Tap-n-Chat takes children’s privacy seriously. In order to activate some of the premium
+features of this App, you need to be 13 years of age or over. If you are younger than
+13 years of age, you need to get your parent or guardian’s consent before registering
+the App.</string>
+    -->
+    <string name="txtParentalConsentInformation">Chatstasy takes children’s privacy seriously. In order to activate some of the premium
+features of this App, you need to be 13 years of age or over. If you are younger than
+13 years of age, you need to get your parent or guardian’s consent before registering
+the App.</string>
+    <string name="txtUnderAge">I am under 13 years of age</string>
+    <string name="txtUnderAgeMessage">Under 13 years old</string>
+    <string name="txtParentalConsentStatus">Parental Consent Not Received</string>
+    <string name="tvParentGuardian">Parent/Guardian Email ID:</string>
+
+    <!-- Twitter -->
+    <string name="twitter_callback">http://www.google.com</string>
+    <!--
+    <string name="twitter_consumer_key">wOiBIYSpq9WW3tVLzvJvaUBde</string>
+    <string name="twitter_consumer_secret">wEMhC51Zs7RiX5EnvJa5YWI3i9SDsE9t1vS0cNv01ubKHhfgrB</string>
+    -->
+
+    <!--  tnc 
+    <string name="twitter_consumer_key">fPvBR7l9YWmJmk38DQ93nao7l</string>
+    <string name="twitter_consumer_secret">EBYXWaSpqGvgVnZv1TOa78COWFI1F4wHUSKwkAxjyMJZcphXMH</string> -->
+
+    <string name="twitter_consumer_key">ic2v7Oi6KZ1XWOOskcoiwueYc</string>
+    <string name="twitter_consumer_secret">oMKpTSe2Hsu0WvpxjIuYqigGDP2BVB37oUUC4N4Vw5Q6hXCMbl</string>
+
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+
+    <!-- Facebook -->
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Post ID: %1$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <!-- <string name="app_id">806021519408188</string> -->
+    <!-- 1615491192063580 -->
+    <!-- <string name="app_id">573431386152424</string> tnc -->
+    <string name="app_id">149166565537841</string> <!-- chatstasy -->
+    <string name="facebook_app_name">tapnchat</string>
+    <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
+    <string name="com_facebook_loginview_log_out_button">Log Out</string>
+    <string name="com_facebook_loginview_log_in_button">Log In</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log Out</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_logo_content_description">Facebook Logo</string>
+    <string name="com_facebook_usersettingsfragment_log_in_button">Log In&#8230;</string>
+    <string name="com_facebook_usersettingsfragment_logged_in">Logged In</string>
+    <string name="com_facebook_usersettingsfragment_not_logged_in">Not Logged In</string>
+    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d were here</string>
+    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
+    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d were here</string>
+    <string name="com_facebook_picker_done_button_text">Done</string>
+    <string name="com_facebook_choose_friends">Choose Friends</string>
+    <string name="com_facebook_nearby">Nearby</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_requesterror_web_login">Please log in via https://www.facebook.com or https://m.facebook.com to re-enable the app to connect with Facebook.</string>
+    <string name="com_facebook_requesterror_relogin">The app is not connected with Facebook, please log in and reconnect this app.</string>
+    <string name="com_facebook_requesterror_password_changed">Your password on Facebook has changed, please reconnect the app with Facebook.</string>
+    <string name="com_facebook_requesterror_reconnect">An error occurred when connecting with Facebook, please reconnect the app with Facebook.</string>
+    <string name="com_facebook_requesterror_permissions">An app connection with Facebook failed due to insufficient permissions, please grant the app permissions to perform the operation.</string>
+    <string name="txtExitMessage">Are you sure you want to exit?</string>
+    <string name="txtPleaseEnterMessage">Please enter the message</string>
+    <string name="txtContactUsRequestSubmitMessage">Thank you very much for contacting us. If this is regarding an issue you are experiencing, our support team will get back to you soon</string>
+    <string name="txtAttached">Attached</string>
+    <string name="txtShareSocialMediaMessage">Share on Social Media</string>
+    <string name="txtUnderAgeShareProhibitionMessage">Unable to share since you are underage.</string>
+    <string name="txtChooseOption">Choose option</string>
+    <string name="txtSearchfromCountryListHint">Search from Country list...</string>
+    <string name="txtAppInstallAgreementMessage">By installing this App, you are agreeing to our Terms of Use  and  Privacy Policy.</string>
+    <string name="txtAgeConfirmation18Years">You need to be 18 years or older to accept this terms of use agreement. If you are under 18, ask your parent/guardian.</string>
+    <string name="txtRunAppWhenready">Please run the App when you are ready.</string>
+    <string name="txtCurrentbackUp">Current Backup</string>
+    <string name="txtBackUp">Backup</string>
+    <string name="txCopy">Copy</string>
+    <string name="txtJustNow">Just Now</string>
+    <string name="txtSecondsAgo">seconds ago</string>
+    <string name="txtOneMinuteAgo">1 min ago</string>
+    <string name="txtMinutesAgo">minutes ago</string>
+    <string name="txtHourAgo">hour ago</string>
+    <string name="txtHoursAgo">hours ago</string>
+    <string name="txtOneDayAgo">1 day ago</string>
+    <string name="txtDaysAgo">days ago</string>
+    <string name="txtNoEmergencyFound">No emergency number found</string>
+    <string name="txtEmergencyNumberWarning">Please be aware that every effort has been taken to provide the  most accurate number for requesting Ambulance within the selected country. It is possible this may not be accurate.  Please check with local authorities. </string>
+    <string name="txtUnknown">Unknown</string>
+    <string name="txtNoContactFound">No Contact Found</string>
+    <string name="txtNoMatchingRecordFound">No matching record found</string>
+    <string name="txtAppRegistrationSettingsMenu">Create Profile</string>
+    <string name="txtUserInfoCamelCase">User Info</string>
+    <string name="txtImagePending">Image Pending</string>
+    <string name="txtCall_Small">call</string>
+    <string name="txtMessage_Small">message</string>
+    <string name="txtDuplicate">Duplicate</string>
+
+    <string-array name="txtInfoActivityOptionMenuArray">
+        <item>How to...</item>
+        <item>FAQ</item>
+        <item>Rate the App</item>
+        <item>International Emergency Numbers</item>
+        <item>Share on Social Media</item>
+        <item>Privacy Policy/Terms of Use</item>
+        <item>Contact Us</item>
+    </string-array>
+
+    <drawable name="red_drawable">#CCAA1883</drawable>
+    <drawable name="green_drawable">#CC123Bff</drawable>
+
+    <!-- GCM -->
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+
+    <!-- Youtube Player -->
+    <string name="error_player">There was an error initializing the YouTubePlayer</string>
+
+    <!-- Premium Features Screen -->
+    <string name="txtPromoCodeError">Please enter valid Promo code</string>
+    <string name="txtPremiumFeaturePopupMessage">Please purchase Premium Version to enable this feature</string>
+
+    <string name="txtAutoBackupMessage">Performing Auto Cloud Backup. Please wait...</string>
+
+    <string name="txtRegistrationReminderMessage">Create your profile to unlock many features of this App. It is simple and FREE!</string>
+    <string name="txtRegistrationTapMessage">Please tap the SEND icon to complete creating your profile.</string>
+
+    <string name="txtActivateElderlyMode">Activate Elderly User Mode</string>
+
+    <!-- Call History -->
+
+    <string name="txtCallHistory">CALL HISTORY</string>
+
+    <string name="txtEmptyCallLogmessage">No calls in the Log</string>
+
+    <string name="txtIncomingCalls">In-coming</string>
+    <string name="txtOutgoingCalls">Out-Going</string>
+    <string name="txtMissedCalls">Missed</string>
+
+    <string name="txtMapMessageContent">"http://maps.google.com/maps?daddr="</string>
+
+    <!-- http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345 -->
+    <string name="txtCallDetailTitle">CALL DETAIL</string>
+
+    <string name="txtChattButtonExistsValidationMessage">Chat Button Already exists for this number</string>
+
+    <string name="txtAddCategory">ADD NEW CHAT BUTTON CATEGORY</string>
+    <string name="txtEditCategory">EDIT CHAT BUTTON CATEGORY</string>
+    <string name="txtCategoryDeleteWarningMessage">This category cannot be deleted as chat button(s) exists for this category</string>
+
+    <!-- User Location Display Fragment -->
+    <string name="txtUserLocationTitle">USER LOCATION INFO</string>
+    <string name="txtGpsDisabledAlertMessage">Please enable gps from the settings to display location.</string>
+
+    <!-- Notify Users on Registration-->
+    <string name="txtCreateContactTilesConfirmation">Do you want to create chat buttons for your contacts?</string>
+    <string name="txtChooseContactToNotifyMessage">Please select at least one contact to be notified.</string>
+    <string name="txtChooseContactToCreateTileMessage">Please select at least one contact to create a tile.</string>
+
+    <!-- Call Status Messages -->
+    <string name="txtCallStatusDialing">DIALING</string>
+    <string name="txtCallStatusConnected">CONNECTED</string>
+    <string name="txtCallStatusIncoming">INCOMING</string>
+
+    <string name="txtVoiceMailSendingConfirmation">Do you want to leave a voice mail?</string>
+
+    <!-- Voice Mail Settings Screen -->
+    <string name="txtVoiceMailSettingsTitle">VOICE MAIL SETTINGS</string>
+    <string name="txtVoiceMessagingEnable">Enable Voice Messaging</string>
+    <string name="txtVoiceMessageGreetings">Voice Message Greetings</string>
+
+    <string name="txtVoiceMessageEnableAlert">Record voice mail first to enable voice messaging.</string>
+
+    <!-- Voice Message List Screen -->
+    <string name="txtVoiceMailListTitle">VOICE MESSAGES</string>
+    <string name="txtNoVoiceMessages">No calls in the Log</string>
+    <string name="txtVoiceMessageDetailTitle">Voice Message</string>
+    <string name="txtEmptyVoiceLogMessage">No voice message in the Log</string>
+
+    <string name="txtCategory">Category ></string>
+    <string name="txtSelectCategories">SELECT CATEGORIES</string>
+    <string name="txtSelectCategoryMessage">Please select category for the chat button</string>
+    <string name="txtSelect">Select</string>
+
+    <!--Notify Image update-->
+    <string name="txtNotifyUser">Broadcast Users</string>
+    <string name="txtImageBroadcast">Image Broadcast</string>
+    <string name="txtBroadCastPopUpButton">Broadcast</string>
+    <string name="txtimageupdate">Please create contact to broadcast image . You don\'t have any contacts </string>
+    <string name="txtimagebroadcastsuccessfully">User Notify Successfully ! </string>
+    <string name="txtValidImageAlert">Invalid image</string>
+
+    <!-- CreateTile hint message-->
+    <string name="txtHintLockImage">Select this option if you do not want this image changed directly by this contact</string>
+    <string name="txtHintEmergencyContact">Select this option to make this contact your emergency contact.  It will be tagged with a red + and placed in front of other non emergency contact buttons for easy access.</string>
+
+
+    <!-- New Registration message-->
+    <string name="txtHintAgeGroup">We want this information to personalize your experience</string>
+    <string name="txtDescription1">Creating Your profile is real simple. It Will take just a minute of your time</string>
+    <string name="txtDescription2">Please provide your name in a language of your choice. This will be used for all-app notification</string>
+    <string name="txtbuttoncancel">cancel</string>
+    <string name="txtAlertPhoneNumber">Please be aware that providing an invalid number or the number of another user is against the Terms of Use.</string>
+    <string name="txthintPhoneNumber">Please provide the number of this mobile phone. Since this is an App for commmunication, it is important you provide the correct phone #.</string>
+    <string name="txthintUserImage">Please provide your profile image. This image will be used for your chat button on other\'s phone.</string>
+    <string name="txtImageTitle">You can always change this any time</string>
+    <string name="txtchkdefaultimage">Make this my default chat button image</string>
+    <string name="txtHintReturningUser">Select this box if you are a returning user and would like to recover your backup</string>
+    <string name="txtHintDefaultImage">When selected, your image will auto populate when others create your chat button</string>
+    <string name="txtPopUpCancel">Creating your profile is free and is necessary to use this App. Please return when you are ready</string>
+    <string name="txtPopupImage">Please select a button image</string>
+    <string name="txtPhoneNumberAlerttext1">The Phone # has been registered under a different device</string>
+    <string name="txtPhoneNumberAlerttext2">Please check and make sure it belongs to you.</string>
+    <string name="txtPhoneNumberAlerttext3">If you are a returning user, please press the back key and select the <b>Returning User</b> box and continue.</string>
+    <string name="txtPhoneNumberAlerttext4">If you are a new user, please use the SMS option below to continue.</string>
+    <string name="txtSendSms">Send SMS</string>
+    <string name="txtCreateProfile">Create Profile</string>
+    <string name="txtProvideBackUpKeytxt1">Please Provide your previous Cloud Backup Key to recover your backup data</string>
+    <string name="txtProvideBackUpKeytxt2">Please Provide your previous Cloud Backup Key to recover your backup data</string>
+    <string name="txtCloudBackUpKey">Cloud Backup key</string>
+    <string name="txtCloudBackUpKeyMessage">Your Cloud Backup key can be found in your email folder if you had provided a valid email ID earlier. If you do not remember, please register as a new user by unchecking the returning User Flag in the previous screen.</string>
+    <string name="txtOldPhoneNumber">OLD PHONE # (with country code)</string>
+    <string name="txtReturningUserWelcome">Welcome Back to </string>
+    <string name="txtRecoverCloudBackupMessage">!Do you want to recover your cloud backup?</string>
+    <string name="txtReturning">returning</string>
+    <string name="txtUser">user</string>
+    <string name="txtCongratulations">Congratulations!</string>
+    <string name="txtUserProfileCreatedMessage">User profile created. Your backup key is =\"backup_key\".\nWe recommend you store the backup key in a safe place outside of this phone to help recover your contacts on a new phone.</string>
+    <string name="txtNotifyUsersProfileCreation">Do you like to notify all =\"app_users\" users from your contact list?</string>
+
+    <string name="txtAirplaneModeAlert">The device is in Airplane mode or has no sim card or outside of cellular service range</string>
+    >
+
+    <!-- Find Chat button -->
+    <string name="txtFindChatButton">Find Chat button</string>
+    <string name="txtHintContactName">Type contact name</string>
+    <string name="txtNoButtonAlert">No chat button exists</string>
+
+
+    <string name="loading">Loading</string>
+    <string name="please_wait">Please wait...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

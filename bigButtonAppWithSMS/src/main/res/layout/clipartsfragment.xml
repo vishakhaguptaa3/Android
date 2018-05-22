@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddindMargins" >
+
+        <TextView
+            android:id="@+id/tvGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtgallery"
+            android:textColor="@color/textBlueColor"
+            android:textSize="@dimen/txtSizeLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight="1"
+            android:background="@color/stripDarkBlueColor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/stripHeight"
+            android:layout_weight="0"
+            android:background="@color/stripLightBlueColor"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textColorGrey"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeMedium"/>
+
+    <GridView
+        android:id="@+id/gvGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/hor_verticalSpacing"
+        android:layout_marginStart="@dimen/hor_verticalSpacing"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/hor_verticalSpacing_ClipArt"
+        android:numColumns="3"
+        android:padding="@dimen/hor_verticalSpacing"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/verSpacing_ClipArt" >
+
+        <!--
+        android:layout_marginLeft="@dimen/hor_verticalSpacing"
+        android:layout_marginStart="@dimen/hor_verticalSpacing"
+        android:layout_marginRight="@dimen/hor_verticalSpacing"
+        android:layout_marginEnd="@dimen/hor_verticalSpacing"
+        android:verticalSpacing="@dimen/hor_verticalSpacing"
+        -->
+        <!-- android:padding="@dimen/paddindMargins" -->
+    </GridView>
+
+</LinearLayout>

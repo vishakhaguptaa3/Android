@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:clickable="true" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightTopBar"
+            layout="@layout/topbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddindMargins" >
+
+            <LinearLayout
+                android:id="@+id/llImageBoundary"
+                android:layout_width="@dimen/imageNotificationBorder"
+                android:layout_height="@dimen/imageNotificationBorder"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/notification_image_border_grey"
+                android:gravity="center"
+                android:padding="@dimen/imageBorderWidth" >
+
+                <com.tnc.utility.RoundedImageViewCircular
+                    android:id="@+id/imViewNotificationContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/paddingUserImage"
+                    android:scaleType="fitXY" >
+                </com.tnc.utility.RoundedImageViewCircular>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/paddindMargins"
+                android:layout_marginStart="@dimen/paddindMargins"
+                android:layout_toEndOf="@+id/llImageBoundary"
+                android:layout_toRightOf="@+id/llImageBoundary"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvTitleNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/textBlueColor"
+                        android:textIsSelectable="false"
+                        android:maxLength="20"
+                        android:textSize="@dimen/txtSizeMedium" />
+
+                   <!--  <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/textColorFrom"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeSmall" /> -->
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNotificationDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopNotificationDetail"
+                    android:singleLine="false"
+                    android:textColor="@android:color/black"
+                    android:textIsSelectable="false"
+                    android:clickable="true"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTopNotificationDetail"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btnUpdateNumber"
+                            android:layout_width="@dimen/replyButtonWidth"
+                            android:layout_height="@dimen/replyButtonHeight"
+                            android:layout_marginRight="@dimen/marginBottomButtons"
+                            android:background="@drawable/button_bg_skip"
+                            android:gravity="center"
+                            android:text="@string/txtUpdateSmall"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:visibility="gone" />
+                        
+                        <Button
+                            android:id="@+id/btnAccept"
+                            android:layout_width="@dimen/replyButtonWidth"
+                            android:layout_height="@dimen/replyButtonHeight"
+                            android:layout_marginRight="@dimen/marginBottomButtons"
+                            android:background="@drawable/button_bg_skip"
+                            android:gravity="center"
+                            android:text="@string/txtAccept"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btnReply"
+                            android:layout_width="@dimen/replyButtonWidth"
+                            android:layout_height="@dimen/replyButtonHeight"
+                            android:background="@drawable/button_bg_skip"
+                            android:gravity="center"
+                            android:text="@string/txtreply"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txtSizeNormal"/>
+
+
+                        <Button
+                            android:id="@+id/btnCreateChatButton"
+                            android:layout_width="@dimen/createChatButtonWidth"
+                            android:layout_height="@dimen/createChatButtonHeight"
+                            android:background="@drawable/button_bg_skip"
+                            android:gravity="center"
+                            android:text="@string/txtCreateCall"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txtSizeNormal"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                    
+                     <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/textColorFrom"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/txtSizeSmall" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddindMargins"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llImageBoundary"
+                android:layout_width="@dimen/imageNotificationBorder"
+                android:layout_height="@dimen/imageNotificationBorder"
+                android:background="@drawable/notificationimageborder"
+                android:gravity="center" >
+
+                <com.bigbutton.utility.RoundedImageView
+                    android:id="@+id/imViewNotificationContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/paddingUserImage"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image" >
+                </com.bigbutton.utility.RoundedImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        -->
+
+    </LinearLayout>
+
+</RelativeLayout>

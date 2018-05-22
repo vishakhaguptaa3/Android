@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/paddingButtons"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imViewCallIcon"
+        android:layout_width="@dimen/iconDimension"
+        android:layout_height="@dimen/iconDimension"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/paddingRightAdapter"
+        android:layout_marginStart="@dimen/paddingRightAdapter"
+        android:contentDescription="@string/image"
+        android:background="@drawable/ic_outgoing_call"/>
+
+
+    <TextView
+        android:id="@+id/tvCallingDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:maxLength="32"
+        android:text="December 12, 02:25 PM"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/txtSizeMedium"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/imViewCallIcon"
+        android:layout_marginLeft="@dimen/paddingRightAdapter"
+        android:layout_marginStart="@dimen/paddingRightAdapter"/>
+
+    <ImageView
+        android:id="@+id/imViewEmergencyCallIcon"
+        android:layout_width="@dimen/iconDimension"
+        android:layout_height="@dimen/iconDimension"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/paddingRightAdapter"
+        android:layout_marginEnd="@dimen/paddingRightAdapter"
+        android:background="@drawable/ic_emergency_call"
+        android:contentDescription="@string/image" />
+
+</RelativeLayout>

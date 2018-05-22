@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/menuItemHeight"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/txtSizeMedium"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/viewSeparatorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvTitle"
+        android:background="#9c9c9c" />
+
+    <ScrollView
+        android:id="@+id/svNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heigthphoneNumberPopup"
+        android:layout_below="@+id/viewSeparatorTitle"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <View
+        android:id="@+id/viewSeparatorScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/svNumbers"
+        android:background="#9c9c9c" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightButton"
+        android:layout_below="@+id/viewSeparatorScrollView"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/txtCancel"
+        android:textColor="@color/textSkipColor"
+        android:textSize="@dimen/txtSizeMedium"
+        android:textStyle="bold" />
+
+</RelativeLayout>

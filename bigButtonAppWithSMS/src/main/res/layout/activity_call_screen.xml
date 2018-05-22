@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTopBar"
+        layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/llTopHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/paddindMargins" >
+
+                <Button
+                    android:id="@+id/btnWifi"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvStatus"
+                    android:layout_marginRight="@dimen/heightTopBar"
+                    android:background="@drawable/ic_wifi"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/stripDarkBlueColor"
+                    android:text="DIALING"
+                    android:textSize="@dimen/txtSizeLarger" />
+
+                <Button
+                    android:id="@+id/btnBluetooth"
+                    android:layout_width="@dimen/dimenCheckBox"
+                    android:layout_height="@dimen/dimenCheckBox"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvStatus"
+                    android:layout_marginLeft="@dimen/heightTopBar"
+                    android:background="@drawable/ic_bluetooth"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddindMargins">
+
+                <FrameLayout
+                    android:id="@+id/flImageContainer"
+                    android:layout_width="@dimen/dimenImageLayoutContacDetails"
+                    android:layout_height="@dimen/dimenImageLayoutContacDetails"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/img_back"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imViewUserImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/paddingButtons"
+                        android:contentDescription="@string/image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/no_image" />
+
+                    <LinearLayout
+                        android:id="@+id/llImageBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangular_boundary_blue"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/paddingButtons"
+                        android:padding="@dimen/imageBorderWidth"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/imViewEmergency"
+                        android:layout_width="@dimen/emergencyIcon"
+                        android:layout_height="@dimen/emergencyIcon"
+                        android:layout_gravity="bottom|right"
+                        android:background="@drawable/emergency_icon"
+                        android:contentDescription="@string/image"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imViewVolume"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_volume_disabled"
+                    android:layout_toRightOf="@+id/flImageContainer"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/paddingButtons"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imViewVolume"
+                    android:layout_marginLeft="@dimen/marginLeftTitle">
+
+                    <Button
+                        android:id="@+id/btnVolumeIncrease"
+                        android:layout_width="@dimen/dimenCheckBox"
+                        android:layout_height="@dimen/dimenCheckBox"
+                        android:background="@drawable/ic_volume_increase_disable"/>
+
+                    <Button
+                        android:id="@+id/btnVolumeDecrease"
+                        android:layout_width="@dimen/dimenCheckBox"
+                        android:layout_height="@dimen/dimenCheckBox"
+                        android:background="@drawable/ic_volume_decrease_disable"
+                        android:layout_marginTop="@dimen/margin_LeftRightTop"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/paddindMargins"
+                android:gravity="center"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txtSizeLarger"
+                android:text="Arena Multimdeia"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="+91-9314618580"
+                android:textColor="#222222"
+                android:textSize="@dimen/txtSizeLarge" />
+            <!-- android:layout_marginTop="@dimen/paddindMargins" -->
+
+            <!-- First Row Buttons Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnSpeaker"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_speaker_disbaled"/>
+
+                <Button
+                    android:id="@+id/btnVoiceMail"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_voice_mail_disabled"
+                    android:layout_marginLeft="@dimen/dimenCheckBox"/>
+
+                <Button
+                    android:id="@+id/btnSendMessage"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_send_message_disabled"
+                    android:layout_marginLeft="@dimen/dimenCheckBox"/>
+            </LinearLayout>
+
+            <!-- Second Row Buttons Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnAddCall"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_add_call_disabled"/>
+
+                <Button
+                    android:id="@+id/btnContactsList"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_contacts_disabled"
+                    android:layout_marginLeft="@dimen/dimenCheckBox"/>
+
+                <Button
+                    android:id="@+id/btnDialpad"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_dialpad_disabled"
+                    android:layout_marginLeft="@dimen/dimenCheckBox"/>
+
+            </LinearLayout>
+
+            <!-- Third Row Buttons Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddindPopUps"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnMute"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_mute_disabled"/>
+
+                <Button
+                    android:id="@+id/btnHangUp"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_hang_up"
+                    android:layout_marginLeft="@dimen/dimenCheckBox"/>
+
+                <Button
+                    android:id="@+id/btnHold"
+                    android:layout_width="@dimen/heightTopBar"
+                    android:layout_height="@dimen/heightTopBar"
+                    android:background="@drawable/ic_hold_grey"
+                    android:layout_marginLeft="@dimen/dimenCheckBox"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
